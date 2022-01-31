@@ -7,6 +7,8 @@
 
   <div class="schedule">
     <h2 class="title">Dzisiaj gramy</h2>
+
+    
     <div class="schedule__container">
       <div class="schedule__box">
         <div class="schedule__img"></div>
@@ -17,7 +19,8 @@
           <p class="schedule__info-description">
             Peter Pan is a mischievous boy who refuses to grow up...
           </p>
-          <button class="schedule__btn"><router-link to="/details">Więcej</router-link></button>
+          <button class="schedule__btn">
+            <router-link :to="{ name: 'details', params: { title: $store.state.swanLake.title , description1: $store.state.swanLake.description, description2: $store.state.swanLake.description2, description3: $store.state.swanLake.description3, description4: $store.state.swanLake.description4, description5: $store.state.swanLake.description5, staff1: $store.state.swanLake.staff1, staff2: $store.state.swanLake.staff2}}">Więcej</router-link></button>
           <button class="schedule__btn">Kup bilet</button>
         </div>
       </div>
