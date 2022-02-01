@@ -13,11 +13,11 @@
       <div class="schedule__box">
         <div class="schedule__img"></div>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Piotruś Pan</h3>
+          <h3 class="schedule__info-title">Swan Lake</h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">J.M. Berrie</p>
+          <p class="schedule__info-author">Tchaikovsky</p>
           <p class="schedule__info-description">
-            Peter Pan is a mischievous boy who refuses to grow up...
+            Swan Lake is the love story of Prince Siegfried, who on a hunting trip...
           </p>
           <button class="schedule__btn">
             <router-link :to="{ name: 'details', params: { title: $store.state.swanLake.title , description1: $store.state.swanLake.description, description2: $store.state.swanLake.description2, description3: $store.state.swanLake.description3, description4: $store.state.swanLake.description4, description5: $store.state.swanLake.description5, staff1: $store.state.swanLake.staff1, staff2: $store.state.swanLake.staff2}}">Więcej</router-link></button>
@@ -27,39 +27,42 @@
       <div class="schedule__box">
         <div class="schedule__img"></div>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Piotruś Pan</h3>
+          <h3 class="schedule__info-title">Peter Pan</h3>
           <p class="schedule__info-time">9:00</p>
           <p class="schedule__info-author">J.M. Berrie</p>
           <p class="schedule__info-description">
             Peter Pan is a mischievous boy who refuses to grow up...
           </p>
-          <button class="schedule__btn">Więcej</button>
+          <button class="schedule__btn">
+         <router-link :to="{ name: 'details', params: { title: $store.state.peterPan.title , description1: $store.state.peterPan.description, description2: $store.state.peterPan.description2, description3: $store.state.peterPan.description3, description4: $store.state.peterPan.description4,staff1: $store.state.peterPan.staff1, staff2: $store.state.peterPan.staff2}}">Więcej</router-link></button>
           <button class="schedule__btn">Kup bilet</button>
         </div>
       </div>
       <div class="schedule__box">
         <div class="schedule__img"></div>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Piotruś Pan</h3>
+          <h3 class="schedule__info-title">Magic To Do</h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">J.M. Berrie</p>
+          <p class="schedule__info-author">Stephen Schwartz</p>
           <p class="schedule__info-description">
             Peter Pan is a mischievous boy who refuses to grow up...
           </p>
-          <button class="schedule__btn">Więcej</button>
+         <button class="schedule__btn">
+         <router-link :to="{ name: 'details', params: { title: $store.state.magicToDo.title , description1: $store.state.magicToDo.description ,staff1: $store.state.magicToDo.staff1, staff2: $store.state.magicToDo.staff2}}">Więcej</router-link></button>
           <button class="schedule__btn">Kup bilet</button>
         </div>
       </div>
       <div class="schedule__box">
         <div class="schedule__img"></div>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Piotruś Pan</h3>
+          <h3 class="schedule__info-title">Symphonic concert</h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">J.M. Berrie</p>
+          <p class="schedule__info-author"></p>
           <p class="schedule__info-description">
             Peter Pan is a mischievous boy who refuses to grow up...
           </p>
-          <button class="schedule__btn">Więcej</button>
+         <button class="schedule__btn">
+         <router-link :to="{ name: 'details', params: { title: $store.state.symphonicConcert.title , description1: $store.state.symphonicConcert.description ,staff1: $store.state.symphonicConcert.staff1, staff2: $store.state.symphonicConcert.staff2}}">Więcej</router-link></button>
           <button class="schedule__btn">Kup bilet</button>
         </div>
       </div>
@@ -70,6 +73,7 @@
     <h2 class="title">Premiere</h2>
     <div class="premiere__container">
       <div class="premiere__box">
+        
         <div class="premiere__img"></div>
         <h3 class="premiere__title">Swan Lake</h3>
         <p class="premiere__author">Tchaikovsky</p>
@@ -196,6 +200,7 @@
      
     </div>
   </div>
+
 
 
 

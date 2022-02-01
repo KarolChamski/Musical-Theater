@@ -8,7 +8,9 @@
             <input class="navbar__input" type="text" placeholder="Szukaj">
         </div>
         <div class="navbar__buttons">
-            <button>repertoire</button>
+            <button>
+                <router-link to="/schedule">
+                schedule </router-link> </button>
             <button>tickets</button>
             <button>🛒</button>
             <button>🙍‍♂️</button>

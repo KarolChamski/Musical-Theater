@@ -34,6 +34,14 @@ a{
   text-decoration: none;
 }
 
+.wrapper {
+  margin-right: auto; 
+  margin-left:  auto; 
+  max-width: 1400px;
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

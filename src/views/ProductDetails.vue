@@ -2,9 +2,11 @@
   <div class="back">
     <button class="back__btn">Wstecz</button>
   </div>
-  <div class="product">
+  <div class="product wrapper">
     <div class="product__box">
-      <div class="product__img"></div>
+
+        <img class="product__img" src="../../src/assets/image1.jpg" alt="">
+
       <div class="product__info">
         <div class="product__info-maintitle">
           <h3 class="product__info-title">{{title}}</h3>
@@ -15,6 +17,31 @@
         <button class="product__info-btn">Kup bilet</button>
       </div>
     </div>
+      <div class="product__date">
+        <h3 class="product__date-title">Select a date</h3>
+        <div class="product__date-btns">
+          <button class="product__date-btn">
+            <p class="product__date-date">17/02/2022</p>
+            <p class="product__date-time">5:30 pm</p>
+            <p class="product__date-day">Saturday</p>
+          </button>
+          <button class="product__date-btn">
+            <p class="product__date-date">17/02/2022</p>
+            <p class="product__date-time">5:30 pm</p>
+            <p class="product__date-day">Saturday</p>
+          </button>
+          <button class="product__date-btn">
+            <p class="product__date-date">17/02/2022</p>
+            <p class="product__date-time">5:30 pm</p>
+            <p class="product__date-day">Saturday</p>
+          </button>
+          <button class="product__date-btn">
+            <p class="product__date-date">17/02/2022</p>
+            <p class="product__date-time">5:30 pm</p>
+            <p class="product__date-day">Saturday</p>
+          </button>
+        </div>
+      </div>
     <p class="product__text">{{description2}}</p>
     <p class="product__text">{{description3}}</p>
     <p class="product__text">{{description4}}</p>
@@ -26,10 +53,9 @@
       <ul class="staff__list">
         <li v-for="staff in staff1" :key="staff">{{staff}}</li>
       </ul>
-
-      <!-- <ul class="staff__list staff__list-second ">
-        <li :v-for="staff in staff2" :key="staff.value">{{staff}}</li>
-      </ul> -->
+      <ul class="staff__list staff__list-second ">
+        <li v-for="staff in staff2" :key="staff">{{staff}}</li>
+      </ul>
 
       </div>
     </div>
@@ -54,21 +80,18 @@ export default{
 }
 
 .product {
-  &__img {
-    height: 350px;
-    width: 550px;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../../src/assets/image1.jpg");
-  }
   &__box {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 4rem;
+
+  }
+  &__img {
+    width: 550px;
   }
   &__info {
     position: relative;
-    width: 600px;
     margin-left: 3rem;
     &-maintitle {
       display: flex;
@@ -94,15 +117,55 @@ export default{
       color: white;
       padding: 0.8rem 2rem;
       font-size: 14px;
+      
     }
   }
   &__text{
       line-height: 28px;
-      margin: 3rem 17rem;
+      margin: 3rem 0rem;
+  }
+
+  &__date{
+    background-color: #f0f0f0;
+    padding: 3rem;
+&-title{
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+    &-btns{
+      display: flex;
+    }
+    &-btn{
+      position: relative;
+      border: none;
+      background: white;
+      cursor: pointer;
+      width: 250px;
+      padding: 1rem;
+      margin-right:2rem;
+    }
+    &-date{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &-time{
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #930000;
+    }
+    &-day{
+      font-size: 14px;
+      color: rgb(173, 173, 173);
+    }
   }
 }
+
+
   .staff{
-      margin: 3rem 17rem;
+      margin: 3rem 0rem;
 
       &__box{
           display: flex;
