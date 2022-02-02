@@ -11,8 +11,10 @@
             <button>
                 <router-link to="/schedule">
                 schedule </router-link> </button>
-            <button>tickets</button>
-            <button>🛒</button>
+            <button>
+                 <router-link to="/tickets">
+                 tickets </router-link> </button>
+            <button> <router-link to="/cart">🛒 </router-link></button>
             <button>🙍‍♂️</button>
         </div>
     </div>

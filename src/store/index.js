@@ -27,6 +27,8 @@ export default createStore({
         "Charmaine Rayner",
         "Haseeb Phelps",
       ],
+      shortDescription: ["Swan Lake is the love story of Prince Siegfried, who on a hunting trip..."],
+      mediumDescription: ["Swan Lake is the love story of Prince Siegfried, who on a hunting trip encounters a flock of swans, falls in love with the Swan Queen, Odette, and swears his allegiance and undying love to her. As a result of a curse by the evil sorcerer Baron von Rothbart, Odette can only take human form between midnight and daybreak..."],
     },
     hauntedManor: {
       title: "The Haunted Manor",
@@ -51,8 +53,11 @@ export default createStore({
         "Charmaine Rayner",
         "Haseeb Phelps",
       ],
+      shortDescription: ["The story represents both an idyllic view of life in a Polish country manor house..."],
+      mediumDescription: ["The story represents both an idyllic view of life in a Polish country manor house, and at the same time an idealistic preoccupation with the patriotic duties of the soldier, the military virtues of courage, bravery, and readiness to take up arms..."],
       from: "https://en.wikipedia.org/wiki/The_Haunted_Manor",
     },
+
     cinderella:{
       title: "Cinderella",
       author:"Siergiej Prokofiew",
@@ -77,6 +82,8 @@ export default createStore({
         "Haseeb Phelps",
       ],
       from:"https://en.wikipedia.org/wiki/Cinderella_(Prokofiev)",
+      shortDescription: ["Cinderella, a young woman whose domineering stepmother forces her to act as a servant..."],
+      mediumDescription: ["Cinderella, a young woman whose domineering stepmother forces her to act as a servant in her own home, helps her stepmother and two stepsisters to prepare for the Spring Ball, at which it is rumoured that the Prince will choose his bride-to-be..."],
     },
     peterPan:{
       title: "Peter Pan",
@@ -99,7 +106,10 @@ export default createStore({
         "Charmaine Rayner",
         "Haseeb Phelps",
       ],
-      from:"https://study.com/academy/lesson/peter-pan-by-jm-barrie-summary-analysis.html"
+      from:"https://study.com/academy/lesson/peter-pan-by-jm-barrie-summary-analysis.html",
+
+      shortDescription: ["The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their..."],
+      mediumDescription: ["The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their children. The early scenes take place in the nursery where Mrs. Darling worries about her children's fascination with a mysterious boy named Peter Pan..."],
     },
     nutcracker:{
       title: "Nutcracker",
@@ -123,6 +133,8 @@ export default createStore({
         "Haseeb Phelps",
       ],
       from:"https://literature.fandom.com/wiki/The_Nutcracker_and_the_Mouse_King",
+      shortDescription: ["The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother..."],
+      mediumDescription: ["The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother Fritz. Drosselmeyer, a friend of the family who is a clockmaker and inventor, arrives and gives the children a mechanical castle as a present..."],
     },
     magicToDo:{
       title:"Magic To Do",
@@ -142,7 +154,9 @@ export default createStore({
         "Charmaine Rayner",
         "Haseeb Phelps",
       ],
-      from:"https://stephenschwartz.com/works/magic-to-do/"
+      from:"https://stephenschwartz.com/works/magic-to-do/",
+      shortDescription: ["A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants..."],
+      mediumDescription: ["A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants, along with four singers, showcase many of Schwartz’s best known songs, accompanied by spectacular magic illusions..."],
     },
     symphonicConcert: {
       title:"Symphonic concert",
@@ -161,6 +175,8 @@ export default createStore({
         "Charmaine Rayner",
         "Haseeb Phelps",
       ],
+      shortDescription: ["Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies..."],
+      mediumDescription: ["Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies, concert overtures, symphonic poems, and concertos for a solo instrument with an orchestra. Symphonic pieces can revel..."],
     }
   },
 });

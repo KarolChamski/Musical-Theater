@@ -4,69 +4,107 @@
   </div>
   <div class="product wrapper">
     <div class="product__box">
-
-        <img class="product__img" src="../../src/assets/image1.jpg" alt="">
+      <img class="product__img" src="../../src/assets/image1.jpg" alt="" />
 
       <div class="product__info">
         <div class="product__info-maintitle">
-          <h3 class="product__info-title">{{title}}</h3>
-          <h3 class="product__info-data">17/02/22</h3>
+          <h3 class="product__info-title">{{ title }}</h3>
+          <h3 class="product__info-data">{{currDate}}</h3>
         </div>
-        <h3 class="product__info-time">17:30</h3>
-        <p class="product__info-text">{{description1}}</p>
+        <h3 class="product__info-time">{{currTime}}</h3>
+        <p class="product__info-text">{{ description1 }}</p>
         <button class="product__info-btn">Kup bilet</button>
       </div>
     </div>
-      <div class="product__date">
-        <h3 class="product__date-title">Select a date</h3>
-        <div class="product__date-btns">
-          <button class="product__date-btn">
-            <p class="product__date-date">17/02/2022</p>
-            <p class="product__date-time">5:30 pm</p>
-            <p class="product__date-day">Saturday</p>
-          </button>
-          <button class="product__date-btn">
-            <p class="product__date-date">17/02/2022</p>
-            <p class="product__date-time">5:30 pm</p>
-            <p class="product__date-day">Saturday</p>
-          </button>
-          <button class="product__date-btn">
-            <p class="product__date-date">17/02/2022</p>
-            <p class="product__date-time">5:30 pm</p>
-            <p class="product__date-day">Saturday</p>
-          </button>
-          <button class="product__date-btn">
-            <p class="product__date-date">17/02/2022</p>
-            <p class="product__date-time">5:30 pm</p>
-            <p class="product__date-day">Saturday</p>
-          </button>
-        </div>
+    <div class="product__date">
+      <h3 class="product__date-title">Select a date</h3>
+      <div class="product__date-btns">
+        <button
+          class="product__date-btn"
+          v-for="item in availableDates"
+          :class="{product__border: item.active}"
+          :key="item.date" @click="selectDate(item)"
+        >
+          <p class="product__date-date">{{ item.date }}</p>
+          <p class="product__date-time">{{ item.time }}</p>
+          <p class="product__date-day">{{ item.day }}</p>
+        </button>
       </div>
-    <p class="product__text">{{description2}}</p>
-    <p class="product__text">{{description3}}</p>
-    <p class="product__text">{{description4}}</p>
-    <p class="product__text">{{description5}}</p>
+    </div>
+    <p class="product__text">{{ description2 }}</p>
+    <p class="product__text">{{ description3 }}</p>
+    <p class="product__text">{{ description4 }}</p>
+    <p class="product__text">{{ description5 }}</p>
 
     <div class="staff">
       <p class="staff__title">Staff</p>
       <div class="staff__box">
-      <ul class="staff__list">
-        <li v-for="staff in staff1" :key="staff">{{staff}}</li>
-      </ul>
-      <ul class="staff__list staff__list-second ">
-        <li v-for="staff in staff2" :key="staff">{{staff}}</li>
-      </ul>
-
+        <ul class="staff__list">
+          <li v-for="staff in staff1" :key="staff">{{ staff }}</li>
+        </ul>
+        <ul class="staff__list staff__list-second">
+          <li v-for="staff in staff2" :key="staff">{{ staff }}</li>
+        </ul>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default{
-  props: ['title', 'description1','description2','description3','description4','description5','staff1', 'staff2'],
-  
-}
+export default {
+  props: [
+    "title",
+    "description1",
+    "description2",
+    "description3",
+    "description4",
+    "description5",
+    "staff1",
+    "staff2",
+  ],
+
+  methods: {
+    selectDate(date){
+      this.availableDates.forEach(date => date.active = false);
+      date.active = true;
+      this.currDate = date.date;
+      this.currTime = date.time;
+    }
+  },
+
+  data() {
+    return {
+      availableDates: [
+        {
+          date: "03/01/2022",
+          time: "4:00 pm",
+          day: "Saturday",
+          active: false,
+        },
+        {
+          date: "06/01/2022",
+          time: "3:30 pm",
+          day: "Tuesday",
+          active: false,
+        },
+        {
+          date: "14/01/2022",
+          time: "4:00 pm",
+          day: "Friday",
+          active: false,
+        },
+        {
+          date: "27/01/2022",
+          time: "3:30 pm",
+          day: "Saturday",
+          active: false,
+        },
+      ],
+      currDate: "",
+      currTime: ""
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -85,7 +123,6 @@ export default{
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
-
   }
   &__img {
     width: 550px;
@@ -117,38 +154,37 @@ export default{
       color: white;
       padding: 0.8rem 2rem;
       font-size: 14px;
-      
     }
   }
-  &__text{
-      line-height: 28px;
-      margin: 3rem 0rem;
+  &__text {
+    line-height: 28px;
+    margin: 3rem 0rem;
   }
 
-  &__date{
+  &__date {
     background-color: #f0f0f0;
     padding: 3rem;
-&-title{
-  font-size: 30px;
-  margin-bottom: 1.5rem;
-}
-    &-btns{
+    &-title {
+      font-size: 30px;
+      margin-bottom: 1.5rem;
+    }
+    &-btns {
       display: flex;
     }
-    &-btn{
+    &-btn {
       position: relative;
       border: none;
       background: white;
       cursor: pointer;
       width: 250px;
       padding: 1rem;
-      margin-right:2rem;
+      margin-right: 2rem;
     }
-    &-date{
+    &-date {
       font-size: 18px;
       font-weight: bold;
     }
-    &-time{
+    &-time {
       position: absolute;
       top: 16px;
       right: 16px;
@@ -156,36 +192,37 @@ export default{
       font-weight: bold;
       color: #930000;
     }
-    &-day{
+    &-day {
       font-size: 14px;
       color: rgb(173, 173, 173);
     }
   }
+  &__border {
+    border: 2px solid black;
+  }
 }
 
+.staff {
+  margin: 3rem 0rem;
 
-  .staff{
-      margin: 3rem 0rem;
-
-      &__box{
-          display: flex;
-      }
-      &__title{
-          font-size: 22px;
-          font-weight: bold;
-          margin:1rem 0rem;
-      }
-      &__list li{
-          line-height: 30px;
-          list-style: none;
-      }
-      &__list {
-          padding: 0;
-          margin-bottom: 3rem;
-           &-second{
-               margin-left: 4rem;
-           }
-      }
-      
+  &__box {
+    display: flex;
   }
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 1rem 0rem;
+  }
+  &__list li {
+    line-height: 30px;
+    list-style: none;
+  }
+  &__list {
+    padding: 0;
+    margin-bottom: 3rem;
+    &-second {
+      margin-left: 4rem;
+    }
+  }
+}
 </style>
