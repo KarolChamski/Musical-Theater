@@ -5,174 +5,187 @@
   </header>
 
   <div class="schedule">
-    <h2 class="title">Dzisiaj gramy</h2>
+    <h2 class="title">Today's schedule</h2>
 
     <div class="schedule__container">
-      <div class="schedule__box"> 
-         <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="">
-         </router-link>
-        <div class="schedule__info">
-          <h3 class="schedule__info-title">Swan Lake</h3>
-          <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">Tchaikovsky</p>
-          <p class="schedule__info-description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip...
-          </p>
-          <button class="schedule__btn">
-            <router-link
-              :to="{
-                name: 'details',
-                params: {
-                  title: $store.state.swanLake.title,
-                  description1: $store.state.swanLake.description,
-                  description2: $store.state.swanLake.description2,
-                  description3: $store.state.swanLake.description3,
-                  description4: $store.state.swanLake.description4,
-                  description5: $store.state.swanLake.description5,
-                  staff1: $store.state.swanLake.staff1,
-                  staff2: $store.state.swanLake.staff2,
-                },
-              }"
-              >Więcej</router-link
-            >
-          </button>
-          <button class="schedule__btn">Kup bilet</button>
-        </div>
-      </div>
       <div class="schedule__box">
-         <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.peterPan.title,
-            description1: $store.state.peterPan.description,
-            description2: $store.state.peterPan.description2,
-            description3: $store.state.peterPan.description3,
-            description4: $store.state.peterPan.description4,
-            staff1: $store.state.peterPan.staff1,
-            staff2: $store.state.peterPan.staff2,
-          },
-        }"
-      >
-         <img class="schedule__img" src="../../src/assets/image1.jpg" alt="">
-         </router-link>
+        <router-link
+          :to="{
+            name: 'details',
+            params: {
+              title: $store.state.shows[0].title,
+              description1: $store.state.shows[0].description,
+              description2: $store.state.shows[0].description2,
+              description3: $store.state.shows[0].description3,
+              description4: $store.state.shows[0].description4,
+              description5: $store.state.shows[0].description5,
+              staff1: $store.state.shows[0].staff1,
+              staff2: $store.state.shows[0].staff2,
+            },
+          }"
+        >
+          <img class="schedule__img" :src="$store.state.shows[0].image" alt="" />
+        </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Peter Pan</h3>
+          <h3 class="schedule__info-title">{{$store.state.shows[0].title}}</h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">J.M. Berrie</p>
+          <p class="schedule__info-author">{{$store.state.shows[0].author}}</p>
           <p class="schedule__info-description">
-            Peter Pan is a mischievous boy who refuses to grow up...
+            {{$store.state.shows[0].shortDescription}}
           </p>
           <button class="schedule__btn">
             <router-link
               :to="{
                 name: 'details',
                 params: {
-                  title: $store.state.peterPan.title,
-                  description1: $store.state.peterPan.description,
-                  description2: $store.state.peterPan.description2,
-                  description3: $store.state.peterPan.description3,
-                  description4: $store.state.peterPan.description4,
-                  staff1: $store.state.peterPan.staff1,
-                  staff2: $store.state.peterPan.staff2,
+                  title: $store.state.shows[0].title,
+                  description1: $store.state.shows[0].description,
+                  description2: $store.state.shows[0].description2,
+                  description3: $store.state.shows[0].description3,
+                  description4: $store.state.shows[0].description4,
+                  description5: $store.state.shows[0].description5,
+                  staff1: $store.state.shows[0].staff1,
+                  staff2: $store.state.shows[0].staff2,
                 },
               }"
               >Więcej</router-link
             >
           </button>
-          <button class="schedule__btn">Kup bilet</button>
+          
+          <button class="schedule__btn">
+              <router-link to="/reservation">Buy ticket
+              </router-link></button>
         </div>
       </div>
       <div class="schedule__box">
         <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.magicToDo.title,
-            description1: $store.state.magicToDo.description,
-            staff1: $store.state.magicToDo.staff1,
-            staff2: $store.state.magicToDo.staff2,
-          },
-        }"
-      >
-        <img class="schedule__img" src="../../src/assets/image1.jpg" alt="">
+          :to="{
+            name: 'details',
+            params: {
+              title: $store.state.shows[3].title,
+              description1: $store.state.shows[3].description,
+              description2: $store.state.shows[3].description2,
+              description3: $store.state.shows[3].description3,
+              description4: $store.state.shows[3].description4,
+              staff1: $store.state.shows[3].staff1,
+              staff2: $store.state.shows[3].staff2,
+            },
+          }"
+        >
+          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
         </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Magic To Do</h3>
+          <h3 class="schedule__info-title">{{$store.state.shows[3].title}}</h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">Stephen Schwartz</p>
+          <p class="schedule__info-author">{{$store.state.shows[3].author}}</p>
           <p class="schedule__info-description">
-            Peter Pan is a mischievous boy who refuses to grow up...
+            {{$store.state.shows[3].shortDescription}}
           </p>
           <button class="schedule__btn">
             <router-link
               :to="{
                 name: 'details',
                 params: {
-                  title: $store.state.magicToDo.title,
-                  description1: $store.state.magicToDo.description,
-                  staff1: $store.state.magicToDo.staff1,
-                  staff2: $store.state.magicToDo.staff2,
+                  title: $store.state.shows[3].title,
+                  description1: $store.state.shows[3].description,
+                  description2: $store.state.shows[3].description2,
+                  description3: $store.state.shows[3].description3,
+                  description4: $store.state.shows[3].description4,
+                  staff1: $store.state.shows[3].staff1,
+                  staff2: $store.state.shows[3].staff2,
                 },
               }"
               >Więcej</router-link
             >
           </button>
-          <button class="schedule__btn">Kup bilet</button>
+          <button class="schedule__btn">
+              <router-link to="/reservation">Kup bilet
+              </router-link></button>
         </div>
       </div>
+
       <div class="schedule__box">
-         <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.symphonicConcert.title,
-            description1: $store.state.symphonicConcert.description,
-            staff1: $store.state.symphonicConcert.staff1,
-            staff2: $store.state.symphonicConcert.staff2,
-          },
-        }"
-      >
-        <img class="schedule__img" src="../../src/assets/image1.jpg" alt="">
-         </router-link>
+        <router-link
+          :to="{
+            name: 'details',
+            params: {
+              title: $store.state.shows[5].title,
+              description1: $store.state.shows[5].description,
+              staff1: $store.state.shows[5].staff1,
+              staff2: $store.state.shows[5].staff2,
+            },
+          }"
+        >
+          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
+        </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">Symphonic concert</h3>
+          <h3 class="schedule__info-title">{{$store.state.shows[5].title}}</h3>
+          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-author">
+            {{ $store.state.shows[5].author }}
+          </p>
+          <p class="schedule__info-description">
+            {{ $store.state.shows[5].shortDescription }}
+          </p>
+          <button class="schedule__btn">
+            <router-link
+              :to="{
+                name: 'details',
+                params: {
+                  title: $store.state.shows[5].title,
+                  description1: $store.state.shows[5].description,
+                  staff1: $store.state.shows[5].staff1,
+                  staff2: $store.state.shows[5].staff2,
+                },
+              }"
+              >Więcej</router-link
+            >
+          </button>
+         <button class="schedule__btn">
+              <router-link to="/reservation">Kup bilet
+              </router-link></button>
+        </div>
+      </div>
+
+      
+      <div class="schedule__box">
+        <router-link
+          :to="{
+            name: 'details',
+            params: {
+              title: $store.state.shows[6].title,
+              description1: $store.state.shows[6].description,
+              staff1: $store.state.shows[6].staff1,
+              staff2: $store.state.shows[6].staff2,
+            },
+          }"
+        >
+          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
+        </router-link>
+        <div class="schedule__info">
+          <h3 class="schedule__info-title">{{$store.state.shows[6].title}}</h3>
           <p class="schedule__info-time">9:00</p>
           <p class="schedule__info-author"></p>
           <p class="schedule__info-description">
-            Peter Pan is a mischievous boy who refuses to grow up...
+            {{$store.state.shows[6].shortDescription}}
           </p>
           <button class="schedule__btn">
             <router-link
               :to="{
                 name: 'details',
                 params: {
-                  title: $store.state.symphonicConcert.title,
-                  description1: $store.state.symphonicConcert.description,
-                  staff1: $store.state.symphonicConcert.staff1,
-                  staff2: $store.state.symphonicConcert.staff2,
+                  title: $store.state.shows[6].title,
+                  description1: $store.state.shows[6].description,
+                  staff1: $store.state.shows[6].staff1,
+                  staff2: $store.state.shows[6].staff2,
                 },
               }"
               >Więcej</router-link
             >
           </button>
-          <button class="schedule__btn">Kup bilet</button>
+         <button class="schedule__btn">
+              <router-link to="/reservation">Kup bilet
+              </router-link></button>
         </div>
       </div>
     </div>
@@ -181,259 +194,31 @@
   <div class="premiere">
     <h2 class="title">Premiere</h2>
     <div class="premiere__container">
-      <router-link
+        <div class="premiere__box" v-for="premiere in $store.state.shows" :key="premiere.title">
+      <router-link 
         :to="{
           name: 'details',
           params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
+            title: premiere.title,
+            description1: premiere.description,
+            description2: premiere.description2,
+            description3: premiere.description3,
+            description4: premiere.description4,
+            description5: premiere.description5,
+            staff1: premiere.staff1,
+            staff2: premiere.staff2,
           },
         }"
       >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
+      
+          <img :src="premiere.image" class="premiere__img" alt="">
+          <h3 class="premiere__title">{{premiere.title}}</h3>
+          <p class="premiere__author">{{premiere.author}}</p>
+          <p class="premiere__description">{{premiere.shortDescription}}
           </p>
-        </div>
       </router-link>
+        </div>
 
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
-      <router-link
-        :to="{
-          name: 'details',
-          params: {
-            title: $store.state.swanLake.title,
-            description1: $store.state.swanLake.description,
-            description2: $store.state.swanLake.description2,
-            description3: $store.state.swanLake.description3,
-            description4: $store.state.swanLake.description4,
-            description5: $store.state.swanLake.description5,
-            staff1: $store.state.swanLake.staff1,
-            staff2: $store.state.swanLake.staff2,
-          },
-        }"
-      >
-        <div class="premiere__box">
-          <div class="premiere__img"></div>
-          <h3 class="premiere__title">Swan Lake</h3>
-          <p class="premiere__author">Tchaikovsky</p>
-          <p class="premiere__description">
-            Swan Lake is the love story of Prince Siegfried, who on a hunting
-            trip..
-          </p>
-        </div>
-      </router-link>
     </div>
   </div>
 
@@ -542,8 +327,7 @@ header {
   }
 
   &__img {
-      width: 270px;
-    
+    width: 270px;
   }
 }
 
@@ -554,22 +338,19 @@ header {
     justify-content: center;
     margin: 3rem 0;
   }
-  a{
+  a {
     margin: 0 1.5rem;
   }
   &__box {
     width: 270px;
     text-align: left;
-    // margin: 0.5rem 1.5rem;
+    margin: 0.5rem 1.5rem;
     padding: 0rem;
     cursor: pointer;
   }
   &__img {
     height: 180px;
     width: 100%;
-    background-image: url("../../src/assets/image1.jpg");
-    background-position: center;
-    background-size: cover;
   }
   &__title {
     margin-top: 0.5rem;

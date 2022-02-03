@@ -13,7 +13,8 @@
         </div>
         <h3 class="product__info-time">{{currTime}}</h3>
         <p class="product__info-text">{{ description1 }}</p>
-        <button class="product__info-btn">Kup bilet</button>
+        <button class="product__info-btn"> <router-link to="/reservation">Buy ticket
+              </router-link></button>
       </div>
     </div>
     <div class="product__date">
