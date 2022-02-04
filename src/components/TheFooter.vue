@@ -35,6 +35,7 @@
 <style lang="scss" scoped>
 
 .footer{
+   
     &__container{
         background-color: #F6F6F6;
         display: flex;

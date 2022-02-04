@@ -27,13 +27,13 @@ a{
 }
 .navbar{
     position: fixed;
+    display: flex;
     justify-content: space-between;
     height: 40px;
     width: 100%;
     top: 0;
     line-height: 40px;
     background-color: rgb(255, 255, 255);
-    display: flex;
     z-index: 1000000;
 
     &__logo{

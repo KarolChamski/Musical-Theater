@@ -39,7 +39,7 @@
             },
           }"
         >
-          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
+          <img class="schedule__img" :src="show.image" alt="" />
         </router-link>
 
         <div class="schedule__text">
@@ -86,7 +86,15 @@
           </router-link>
 
           <button class="schedule__btn">
-            <router-link to="/reservation">Buy ticket </router-link>
+            <router-link :to="{
+                name: 'reservation',
+                params: {
+                  title: show.title,
+                  author: show.author,
+                  date: show.date,
+                  time: show.time
+                },
+              }">Buy ticket </router-link>
           </button>
         </div>
       </div>

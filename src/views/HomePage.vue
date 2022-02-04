@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="header__img"></div>
+    <img class="header__img" src="../../src/assets/header.jpeg" alt="">
     <div class="header__shadow"></div>
   </header>
 
@@ -24,14 +24,22 @@
             },
           }"
         >
-          <img class="schedule__img" :src="$store.state.shows[0].image" alt="" />
+          <img
+            class="schedule__img"
+            :src="$store.state.shows[0].image"
+            alt=""
+          />
         </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">{{$store.state.shows[0].title}}</h3>
+          <h3 class="schedule__info-title">
+            {{ $store.state.shows[0].title }}
+          </h3>
           <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">{{$store.state.shows[0].author}}</p>
+          <p class="schedule__info-author">
+            {{ $store.state.shows[0].author }}
+          </p>
           <p class="schedule__info-description">
-            {{$store.state.shows[0].shortDescription}}
+            {{ $store.state.shows[0].shortDescription }}
           </p>
           <button class="schedule__btn">
             <router-link
@@ -51,103 +59,149 @@
               >Więcej</router-link
             >
           </button>
-          
-          <button class="schedule__btn">
-              <router-link to="/reservation">Buy ticket
-              </router-link></button>
-        </div>
-      </div>
-      <div class="schedule__box">
-        <router-link
-          :to="{
-            name: 'details',
-            params: {
-              title: $store.state.shows[3].title,
-              description1: $store.state.shows[3].description,
-              description2: $store.state.shows[3].description2,
-              description3: $store.state.shows[3].description3,
-              description4: $store.state.shows[3].description4,
-              staff1: $store.state.shows[3].staff1,
-              staff2: $store.state.shows[3].staff2,
-            },
-          }"
-        >
-          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
-        </router-link>
-        <div class="schedule__info">
-          <h3 class="schedule__info-title">{{$store.state.shows[3].title}}</h3>
-          <p class="schedule__info-time">9:00</p>
-          <p class="schedule__info-author">{{$store.state.shows[3].author}}</p>
-          <p class="schedule__info-description">
-            {{$store.state.shows[3].shortDescription}}
-          </p>
+
           <button class="schedule__btn">
             <router-link
               :to="{
-                name: 'details',
+                name: 'reservation',
                 params: {
-                  title: $store.state.shows[3].title,
-                  description1: $store.state.shows[3].description,
-                  description2: $store.state.shows[3].description2,
-                  description3: $store.state.shows[3].description3,
-                  description4: $store.state.shows[3].description4,
-                  staff1: $store.state.shows[3].staff1,
-                  staff2: $store.state.shows[3].staff2,
+                  title: $store.state.shows[0].title,
+                  author: $store.state.shows[0].author,
+                  date: $store.state.shows[0].date,
+                  time: $store.state.shows[0].time,
                 },
               }"
-              >Więcej</router-link
-            >
+              >Buy ticket
+            </router-link>
           </button>
-          <button class="schedule__btn">
-              <router-link to="/reservation">Kup bilet
-              </router-link></button>
         </div>
       </div>
-
       <div class="schedule__box">
         <router-link
           :to="{
             name: 'details',
             params: {
-              title: $store.state.shows[5].title,
-              description1: $store.state.shows[5].description,
-              staff1: $store.state.shows[5].staff1,
-              staff2: $store.state.shows[5].staff2,
+              title: $store.state.shows[2].title,
+              description1: $store.state.shows[2].description,
+              description2: $store.state.shows[2].description2,
+              description3: $store.state.shows[2].description3,
+              description4: $store.state.shows[2].description4,
+              staff1: $store.state.shows[2].staff1,
+              staff2: $store.state.shows[2].staff2,
             },
           }"
         >
-          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
+          <img
+            class="schedule__img"
+            :src="$store.state.shows[2].image"
+            alt=""
+          />
         </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">{{$store.state.shows[5].title}}</h3>
+          <h3 class="schedule__info-title">
+            {{ $store.state.shows[2].title }}
+          </h3>
           <p class="schedule__info-time">9:00</p>
           <p class="schedule__info-author">
-            {{ $store.state.shows[5].author }}
+            {{ $store.state.shows[2].author }}
           </p>
           <p class="schedule__info-description">
-            {{ $store.state.shows[5].shortDescription }}
+            {{ $store.state.shows[2].shortDescription }}
           </p>
           <button class="schedule__btn">
             <router-link
               :to="{
                 name: 'details',
                 params: {
-                  title: $store.state.shows[5].title,
-                  description1: $store.state.shows[5].description,
-                  staff1: $store.state.shows[5].staff1,
-                  staff2: $store.state.shows[5].staff2,
+                  title: $store.state.shows[2].title,
+                  description1: $store.state.shows[2].description,
+                  description2: $store.state.shows[2].description2,
+                  description3: $store.state.shows[2].description3,
+                  description4: $store.state.shows[2].description4,
+                  staff1: $store.state.shows[2].staff1,
+                  staff2: $store.state.shows[2].staff2,
                 },
               }"
               >Więcej</router-link
             >
           </button>
-         <button class="schedule__btn">
-              <router-link to="/reservation">Kup bilet
-              </router-link></button>
+          <button class="schedule__btn">
+            <router-link
+              :to="{
+                name: 'reservation',
+                params: {
+                  title: $store.state.shows[2].title,
+                  author: $store.state.shows[2].author,
+                  date: $store.state.shows[2].date,
+                  time: $store.state.shows[2].time,
+                },
+              }"
+              >Kup bilet
+            </router-link>
+          </button>
         </div>
       </div>
 
-      
+      <div class="schedule__box">
+        <router-link
+          :to="{
+            name: 'details',
+            params: {
+              title: $store.state.shows[4].title,
+              description1: $store.state.shows[4].description,
+              staff1: $store.state.shows[4].staff1,
+              staff2: $store.state.shows[4].staff2,
+            },
+          }"
+        >
+          <img
+            class="schedule__img"
+            :src="$store.state.shows[4].image"
+            alt=""
+          />
+        </router-link>
+        <div class="schedule__info">
+          <h3 class="schedule__info-title">
+            {{ $store.state.shows[4].title }}
+          </h3>
+          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-author">
+            {{ $store.state.shows[4].author }}
+          </p>
+          <p class="schedule__info-description">
+            {{ $store.state.shows[4].shortDescription }}
+          </p>
+          <button class="schedule__btn">
+            <router-link
+              :to="{
+                name: 'details',
+                params: {
+                  title: $store.state.shows[4].title,
+                  description1: $store.state.shows[4].description,
+                  staff1: $store.state.shows[4].staff1,
+                  staff2: $store.state.shows[4].staff2,
+                },
+              }"
+              >Więcej</router-link
+            >
+          </button>
+          <button class="schedule__btn">
+            <router-link
+              :to="{
+                name: 'reservation',
+                params: {
+                  title: $store.state.shows[4].title,
+                  author: $store.state.shows[4].author,
+                  date: $store.state.shows[4].date,
+                  time: $store.state.shows[4].time,
+                },
+              }"
+              >Kup bilet
+            </router-link>
+          </button>
+        </div>
+      </div>
+
       <div class="schedule__box">
         <router-link
           :to="{
@@ -160,14 +214,20 @@
             },
           }"
         >
-          <img class="schedule__img" src="../../src/assets/image1.jpg" alt="" />
+          <img
+            class="schedule__img"
+            :src="$store.state.shows[6].image"
+            alt=""
+          />
         </router-link>
         <div class="schedule__info">
-          <h3 class="schedule__info-title">{{$store.state.shows[6].title}}</h3>
+          <h3 class="schedule__info-title">
+            {{ $store.state.shows[6].title }}
+          </h3>
           <p class="schedule__info-time">9:00</p>
           <p class="schedule__info-author"></p>
           <p class="schedule__info-description">
-            {{$store.state.shows[6].shortDescription}}
+            {{ $store.state.shows[6].shortDescription }}
           </p>
           <button class="schedule__btn">
             <router-link
@@ -183,9 +243,20 @@
               >Więcej</router-link
             >
           </button>
-         <button class="schedule__btn">
-              <router-link to="/reservation">Kup bilet
-              </router-link></button>
+          <button class="schedule__btn">
+            <router-link
+              :to="{
+                name: 'reservation',
+                params: {
+                  title: $store.state.shows[6].title,
+                  author: $store.state.shows[6].author,
+                  date: $store.state.shows[6].date,
+                  time: $store.state.shows[6].time,
+                },
+              }"
+              >Kup bilet
+            </router-link>
+          </button>
         </div>
       </div>
     </div>
@@ -194,31 +265,32 @@
   <div class="premiere">
     <h2 class="title">Premiere</h2>
     <div class="premiere__container">
-        <div class="premiere__box" v-for="premiere in $store.state.shows" :key="premiere.title">
-      <router-link 
-        :to="{
-          name: 'details',
-          params: {
-            title: premiere.title,
-            description1: premiere.description,
-            description2: premiere.description2,
-            description3: premiere.description3,
-            description4: premiere.description4,
-            description5: premiere.description5,
-            staff1: premiere.staff1,
-            staff2: premiere.staff2,
-          },
-        }"
+      <div
+        class="premiere__box"
+        v-for="premiere in $store.state.shows"
+        :key="premiere.title"
       >
-      
-          <img :src="premiere.image" class="premiere__img" alt="">
-          <h3 class="premiere__title">{{premiere.title}}</h3>
-          <p class="premiere__author">{{premiere.author}}</p>
-          <p class="premiere__description">{{premiere.shortDescription}}
-          </p>
-      </router-link>
-        </div>
-
+        <router-link
+          :to="{
+            name: 'details',
+            params: {
+              title: premiere.title,
+              description1: premiere.description,
+              description2: premiere.description2,
+              description3: premiere.description3,
+              description4: premiere.description4,
+              description5: premiere.description5,
+              staff1: premiere.staff1,
+              staff2: premiere.staff2,
+            },
+          }"
+        >
+          <img :src="premiere.image" class="premiere__img" alt="" />
+          <h3 class="premiere__title">{{ premiere.title }}</h3>
+          <p class="premiere__author">{{ premiere.author }}</p>
+          <p class="premiere__description">{{ premiere.shortDescription }}</p>
+        </router-link>
+      </div>
     </div>
   </div>
 
@@ -226,33 +298,52 @@
     <h2 class="title">News</h2>
     <div class="news__container">
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+         <router-link to="/news">
+        <img class="news__img" src="../../src/assets/pinocchio.jpg" alt="" />
+        <h3 class="news__title">Pinocchio on DVD coming soon</h3>
+                 </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/valentine.jpeg" alt="" />
+        <h3 class="news__title">Valentines day in the Musical Theater</h3>
+        </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/woman.jpg" alt="" />
+        <h3 class="news__title">
+          Don Giovanni W.A Mozart for Grandma's and Grandpa's Day
+        </h3>
+        </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/curtain.jpg" alt="" />
+        <h3 class="news__title">COVID information</h3>
+        </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/rehearsals.jpg" alt="" />
+        <h3 class="news__title">
+          Rehearsals for the premiere The Haunted Manor S. Moniuszko
+        </h3>
+        </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/donquixote.jpg" alt="" />
+        <h3 class="news__title">Don Quixote Ludwig Minkus coming soon</h3>
+        </router-link>
       </div>
       <div class="news__box">
-        <div class="news__img"></div>
-        <h3 class="news__title">Coming soon Pinocchio on DVD</h3>
+        <router-link to="/news">
+        <img class="news__img" src="../../src/assets/newyear.jpeg" alt="" />
+        <h3 class="news__title">New Year's Eve to the disco rhythm</h3>
+        </router-link>
       </div>
+  
     </div>
   </div>
 </template>
@@ -260,20 +351,21 @@
 <style lang="scss" scoped>
 header {
   position: relative;
-  height: 400px;
+  height: 500px;
   width: 100%;
   .header__img {
-    height: 100%;
-    background-image: url("../../src/assets/image1.jpg");
-    background-position: center;
-    background-size: cover;
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:center;
+  
   }
   .header__shadow {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(0, 0, 0, 0.308);
   }
 }
 
@@ -291,7 +383,7 @@ header {
   &__box {
     display: flex;
     text-align: left;
-    margin: 3rem 3rem;
+    margin: 2rem 3rem;
   }
 
   &__info {
@@ -338,9 +430,7 @@ header {
     justify-content: center;
     margin: 3rem 0;
   }
-  a {
-    margin: 0 1.5rem;
-  }
+
   &__box {
     width: 270px;
     text-align: left;
@@ -367,16 +457,19 @@ header {
 }
 
 .news {
+  a{
+    color: black;
+  }
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem 0 6rem 0;
+    margin: 2rem 0 6rem 0;
   }
   &__box {
-    width: 200px;
+    width: 220px;
     text-align: left;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
   }
 
   &__img {

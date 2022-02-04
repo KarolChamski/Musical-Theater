@@ -21,7 +21,7 @@
     <div class="ticket__moreInfo">
       <p class="ticket__sector">Sector: Big Scene</p>
       <p class="ticket__row">Row: A</p>
-      <p class="ticket__seat">Place: 3</p>
+      <p class="ticket__seat">Seat: 3</p>
     </div>
     <p class="ticket__message">Please do not copy!</p>
 

@@ -8,6 +8,7 @@ import Cart from './views/TheCart.vue'
 import Tickets from './views/AllTickets.vue'
 import Ticket from './views/TheTicket.vue'
 import Reservation from './views/ReservationPage.vue'
+import News from './views/NewsPage.vue'
 import store from './store'
 
 
@@ -21,7 +22,8 @@ const router = createRouter({
       { path: '/cart', name: 'cart', component: Cart, },
       { path: '/tickets', name: 'tickets', component: Tickets, },
       { path: '/ticket', name: 'ticket', component: Ticket, },
-      { path: '/reservation', name: 'reservation', component: Reservation, },
+      { path: '/reservation', name: 'reservation', component: Reservation, props: true },
+      { path: '/news', name: 'news', component: News, },
     ],
     linkActiveClass: "active",
   });

@@ -60,7 +60,7 @@ export default createStore({
        mediumDescription: "The story represents both an idyllic view of life in a Polish country manor house, and at the same time an idealistic preoccupation with the patriotic duties of the soldier, the military virtues of courage, bravery, and readiness to take up arms...",
        from: "https://en.wikipedia.org/wiki/The_Haunted_Manor",
        group: 2,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/thehaunted.jpg')
      },
  
      {
@@ -90,7 +90,7 @@ export default createStore({
        shortDescription: "Cinderella, a young woman whose domineering stepmother forces her to act as a servant...",
        mediumDescription: "Cinderella, a young woman whose domineering stepmother forces her to act as a servant in her own home, helps her stepmother and two stepsisters to prepare for the Spring Ball, at which it is rumoured that the Prince will choose his bride-to-be...",
        group: 1,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/cinderella.jpg')
      },
      {
        title: "Peter Pan",
@@ -118,7 +118,7 @@ export default createStore({
        shortDescription: "The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their...",
        mediumDescription: "The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their children. The early scenes take place in the nursery where Mrs. Darling worries about her children's fascination with a mysterious boy named Peter Pan...",
        group: 2,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/peterpan.jpg')
      },
      {
        title: "Nutcracker",
@@ -145,7 +145,7 @@ export default createStore({
        shortDescription:"The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother...",
        mediumDescription: "The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother Fritz. Drosselmeyer, a friend of the family who is a clockmaker and inventor, arrives and gives the children a mechanical castle as a present...",
        group: 1,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/nutcracker.jpg')
      },
      {
        title:"Magic To Do",
@@ -169,7 +169,7 @@ export default createStore({
        shortDescription: "A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants...",
        mediumDescription: "A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants, along with four singers, showcase many of Schwartz’s best known songs, accompanied by spectacular magic illusions...",
        group: 2,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/magic.jpg')
      },
      {
        title:"Symphonic concert",
@@ -191,8 +191,81 @@ export default createStore({
        shortDescription: "Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies...",
        mediumDescription: "Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies, concert overtures, symphonic poems, and concertos for a solo instrument with an orchestra. Symphonic pieces can revel...",
        group: 1,
-       image: require('../../public/img/swanlake.jpg')
-     }
+       image: require('../../public/img/symphonic.jpg')
+     },
+     {
+       title:"Frank Sinatra acoustically",
+       description:"Frank Sinatra acoustically is a beautiful winter concert that warms the audience even in the coldest frost. Pleasant swing arrangements of American Christmas standards will take you straight to the 40's on the snow-covered streets of New York. During the concert you can hear popular winter songs such as Let it. snow, Jingle bells, Winter Wonderland. There will also be the greatest hits of Sinatra, including the famous New York, New York or the beautiful ballad My Way.",
+       description2:"During the show, the music will take us to Las Vegas in the 50's and 60's, where jazz and swing reigned supreme and the singer celebrated his greatest artistic success. For decades, Frank Sinatra was one of the most important figures on the entertainment map of America. His life is a dizzying career, popularity, money and the most beautiful women of Hollywood. There will also be film music, which will introduce us to the atmosphere of the artist's intriguing and not fully proven contacts with the Sicilian mafia. We warmly invite you to a world full of splendor and perfect music.",
+       staff1: [
+         "Ceri Murray",
+         "Phebe Evans",
+         "Halimah Grimes",
+         "Aviana Pugh",
+         "Stevie Madden",
+       ],
+       staff2: [
+         "Ciara Rojas",
+         "Nile Duarte",
+         "Aleisha Mendoza",
+         "Charmaine Rayner",
+         "Haseeb Phelps",
+       ],
+       shortDescription: "Frank Sinatra acoustically is a beautiful winter concert that warms the audience even in the coldest frost...",
+       mediumDescription: "Frank Sinatra acoustically is a beautiful winter concert that warms the audience even in the coldest frost. Pleasant swing arrangements of American Christmas standards will take you straight to the 40's on the snow-covered streets of New York. During the concert you can hear popular winter songs such as Let it. snow, Jingle bells, Winter Wonderland...",
+       group: 2,
+       image: require('../../public/img/sinatra.jpg')
+     },
+     {
+       title:"Traviata",
+       author:"Giuseppe Verdi",
+       description:"Violetta Valéry, a famed courtesan, throws a lavish party at her Paris salon to celebrate her recovery from an illness. Gastone, a viscount, has brought with him a friend, Alfredo Germont, a young bourgeois from a provincial family who has long adored Violetta from afar. While walking to the salon, Gastone tells Violetta that Alfredo loves her, and that while she was ill, he came to her house every day.Baron Douphol, Violetta's current lover, waits nearby to escort her to the salon. Once there, the Baron is asked to give a toast, but refuses, and the crowd turns to Alfredo, who agrees to sing a brindisi – a drinking song.",
+       description2:"Three months later, Alfredo and Violetta are living together in a peaceful country house outside Paris. Violetta has fallen in love with Alfredo and she has completely abandoned her former life. Alfredo sings of their happy life together, Annina, the maid, arrives from Paris, and, when questioned by Alfredo, tells him that she went there to sell  and everything owned by Violetta to support their country lifestyle. Alfredo is shocked to learn this and leaves for Paris immediately to settle matters himself. Violetta is writing a farewell letter to Alfredo. She can barely control her sadness and tears; she tells him repeatedly of her unconditional love. Before rushing out and setting off for Paris, she hands the farewell letter to her servant to give to Alfredo.",
+       description3:"Soon, the servant brings the letter to Alfredo and, as soon as he has read it, Giorgio returns and attempts to comfort his son. Alfredo suspects that the Baron is behind his separation with Violetta. He decides to confront Violetta at the party. Giorgio tries to stop Alfredo, but he rushes out.",
+       staff1: [
+         "Ceri Murray",
+         "Phebe Evans",
+         "Halimah Grimes",
+         "Aviana Pugh",
+         "Stevie Madden",
+       ],
+       staff2: [
+         "Ciara Rojas",
+         "Nile Duarte",
+         "Aleisha Mendoza",
+         "Charmaine Rayner",
+         "Haseeb Phelps",
+       ],
+       shortDescription: "Violetta Valéry, a famed courtesan, throws a lavish party at her Paris salon to celebrate her...",
+       mediumDescription: "Violetta Valéry, a famed courtesan, throws a lavish party at her Paris salon to celebrate her recovery from an illness. Gastone, a viscount, has brought with him a friend, Alfredo Germont, a young bourgeois from a provincial family who has long adored Violetta from afar. While walking to the salon, Gastone tells Violetta that Alfredo loves her...",
+       group: 1,
+       image: require('../../public/img/traviata.jpg')
+     },
+     {
+       title:"The Girl On The Train",
+       author:"Paula Hawkins",
+       description:"The international phenomenon novel by Paula Hawkins has been adapted into a thrilling, first-class play that you won’t want to miss. Over 20 million copies of this bestselling novel have been sold worldwide and the stage adaptation is expected to enjoy similar success.",
+       description2:"Who’s The Girl on the Train? Rachel Watson longs for a different life and on her daily commute she finds the perfect escape via the idealistic couple she watches through the train window. Rachel looks on as the couple create the perfect illusion of happiness and love. However, this fantasy is shattered when she learns the woman she’s been watching has mysteriously disappeared. Rachel finds herself a witness and even a suspect in this thrilling mystery which reveals bigger secrets than she could have ever imagined. The Girl on the Train: A commute to worldwide success This breath-baiting story began as a novel by Paula Hawkins, which went on to become an international bestseller. The Girl on the Train rose to further popularity when Dreamworks Film adapted the story into a film starring Golden Globe-winning, BAFTA-nominated actress Emily Blunt. Now the journey goes further, after Rachel Wagstaff and Duncan Abel adapted the story into a gripping play.",
+       description3:"This new play is set to grip a wide audience once again and you’re going to want to be quick to make sure you don’t miss out on this exhilarating ride. Book your tickets for The Girl on the Train as fast as you can, these tickets will fly by faster than a high-speed train. You'll want to be among the first to secure  The Girl on the Train tickets run while stocks last.",
+       staff1: [
+         "Ceri Murray",
+         "Phebe Evans",
+         "Halimah Grimes",
+         "Aviana Pugh",
+         "Stevie Madden",
+       ],
+       staff2: [
+         "Ciara Rojas",
+         "Nile Duarte",
+         "Aleisha Mendoza",
+         "Charmaine Rayner",
+         "Haseeb Phelps",
+       ],
+       shortDescription: "The international phenomenon novel by Paula Hawkins has been adapted into a thrilling, first-class play that...",
+       mediumDescription: "The international phenomenon novel by Paula Hawkins has been adapted into a thrilling, first-class play that you won’t want to miss. Over 20 million copies of this bestselling novel have been sold worldwide and the stage adaptation is expected to enjoy similar success. Who’s The Girl on the Train?...",
+       group: 2,
+       image: require('../../public/img/train.jpg')
+     },
     ]
   },
 });
