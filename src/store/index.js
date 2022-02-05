@@ -266,6 +266,7 @@ export default createStore({
        group: 2,
        image: require('../../public/img/train.jpg')
      },
-    ]
+    ],
+    cart: []
   },
 });

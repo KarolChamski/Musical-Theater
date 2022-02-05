@@ -27,7 +27,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowA1"
+            v-for="seat in seats[0]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -39,7 +39,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowB1"
+            v-for="seat in seats[3]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -51,7 +51,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowC1"
+            v-for="seat in seats[6]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -63,7 +63,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowD1"
+            v-for="seat in seats[9]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -75,7 +75,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowE1"
+            v-for="seat in seats[12]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -87,7 +87,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowF1"
+            v-for="seat in seats[15]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -99,7 +99,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowG1"
+            v-for="seat in seats[18]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -111,7 +111,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowH1"
+            v-for="seat in seats[21]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -123,128 +123,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowI1"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-      </div>
-      <div class="seats__letters">
-        <p class="seats__letter">a</p>
-        <p class="seats__letter">b</p>
-        <p class="seats__letter">c</p>
-        <p class="seats__letter">d</p>
-        <p class="seats__letter">e</p>
-        <p class="seats__letter">f</p>
-        <p class="seats__letter">g</p>
-        <p class="seats__letter">h</p>
-        <p class="seats__letter">i</p>
-      </div>
-      <div class="seats__box">
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowA5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowB5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowC5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowD5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowE5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowF5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowG5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowH5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }"
-          >
-            {{ seat.num }}
-          </button>
-        </div>
-        <div class="seats__row">
-          <button
-            class="seats__seat"
-            v-for="seat in rowI5"
+            v-for="seat in seats[24]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -269,7 +148,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowA10"
+            v-for="seat in seats[1]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -281,7 +160,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowB10"
+            v-for="seat in seats[4]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -293,7 +172,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowC10"
+            v-for="seat in seats[7]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -305,7 +184,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowD10"
+            v-for="seat in seats[10]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -317,7 +196,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowE10"
+            v-for="seat in seats[13]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -329,7 +208,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowF10"
+            v-for="seat in seats[16]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -341,7 +220,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowG10"
+            v-for="seat in seats[19]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -353,7 +232,7 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowH10"
+            v-for="seat in seats[22]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -365,7 +244,128 @@
         <div class="seats__row">
           <button
             class="seats__seat"
-            v-for="seat in rowI10"
+            v-for="seat in seats[25]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+      </div>
+      <div class="seats__letters">
+        <p class="seats__letter">a</p>
+        <p class="seats__letter">b</p>
+        <p class="seats__letter">c</p>
+        <p class="seats__letter">d</p>
+        <p class="seats__letter">e</p>
+        <p class="seats__letter">f</p>
+        <p class="seats__letter">g</p>
+        <p class="seats__letter">h</p>
+        <p class="seats__letter">i</p>
+      </div>
+      <div class="seats__box">
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[2]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[5]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[8]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[11]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[14]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[17]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[20]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[23]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[26]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
@@ -379,60 +379,40 @@
     <div class="seats__container">
       <div class="seats__box">
         <div class="seats__row">
-          <button  class="seats__seat"
-            v-for="seat in rowJ1"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[27]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
-      
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
         <div class="seats__row">
-          <button  class="seats__seat"
-            v-for="seat in rowK1"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[30]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
         <div class="seats__row">
-          <button  class="seats__seat"
-            v-for="seat in rowL1"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[33]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
-        </div>
-      </div>
-      <div class="seats__letters">
-        <p class="seats__letter">J</p>
-        <p class="seats__letter">K</p>
-        <p class="seats__letter">L</p>
-      </div>
-      <div class="seats__box">
-        <div class="seats__row">
-       <button  class="seats__seat"
-            v-for="seat in rowJ5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
-        </div>
-        <div class="seats__row">
-          <button  class="seats__seat"
-            v-for="seat in rowK5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
-        </div>
-        <div class="seats__row">
-         <button  class="seats__seat"
-            v-for="seat in rowL5"
-            :key="seat.num"
-            @click="chooseSeat(seat)"
-            :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
       </div>
       <div class="seats__letters">
@@ -442,28 +422,83 @@
       </div>
       <div class="seats__box">
         <div class="seats__row">
-      <button  class="seats__seat"
-            v-for="seat in rowJ10"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[28]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
         <div class="seats__row">
-   <button  class="seats__seat"
-            v-for="seat in rowK10"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[31]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
         <div class="seats__row">
-   <button  class="seats__seat"
-            v-for="seat in rowL10"
+          <button
+            class="seats__seat"
+            v-for="seat in seats[34]"
             :key="seat.num"
             @click="chooseSeat(seat)"
             :disabled="!seat.available"
-            :class="{ seats__active: seat.active }">{{ seat.num }}</button>
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+      </div>
+      <div class="seats__letters">
+        <p class="seats__letter">J</p>
+        <p class="seats__letter">K</p>
+        <p class="seats__letter">L</p>
+      </div>
+      <div class="seats__box">
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[29]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[32]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
+        </div>
+        <div class="seats__row">
+          <button
+            class="seats__seat"
+            v-for="seat in seats[35]"
+            :key="seat.num"
+            @click="chooseSeat(seat)"
+            :disabled="!seat.available"
+            :class="{ seats__active: seat.active }"
+          >
+            {{ seat.num }}
+          </button>
         </div>
       </div>
     </div>
@@ -484,7 +519,7 @@
     <p class="price__text">Total price: $143</p>
     <button class="price__back">back</button>
     <button class="price__submit">
-      <router-link to="/tickets">submit </router-link>
+      <router-link @click="submitReservation" to="/tickets">submit </router-link>
     </button>
   </div>
 </template>
@@ -492,1156 +527,1203 @@
 export default {
   data() {
     return {
-      rowA1: [
-        {
-          num: 1,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 2,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 3,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 4,
-          row: "A",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 5,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowA5: [
-        {
-          num: 6,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 7,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 8,
-          row: "A",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 9,
-          row: "A",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 10,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowA10: [
-        {
-          num: 11,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 12,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 13,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 14,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 15,
-          row: "A",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowB1: [
-        {
-          num: 1,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 2,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 3,
-          row: "B",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 4,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 5,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowB5: [
-        {
-          num: 6,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 7,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 8,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 9,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 10,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowB10: [
-        {
-          num: 11,
-          row: "B",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 12,
-          row: "B",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 13,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 14,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 15,
-          row: "B",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowC1: [
-        {
-          num: 1,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 2,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 3,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 4,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 5,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowC5: [
-        {
-          num: 6,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 7,
-          row: "C",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 8,
-          row: "C",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 9,
-          row: "C",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 10,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowC10: [
-        {
-          num: 11,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 12,
-          row: "C",
-          available: false,
-          price: 38,
-        },
-        {
-          num: 13,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 14,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-        {
-          num: 15,
-          row: "C",
-          available: true,
-          price: 38,
-        },
-      ],
-      rowD1: [
-        {
-          num: 1,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 2,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 3,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 4,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 5,
-          row: "D",
-          available: false,
-          price: 30,
-        },
-      ],
-      rowD5: [
-        {
-          num: 6,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 7,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 8,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 9,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 10,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowD10: [
-        {
-          num: 11,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 12,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 13,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 14,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 15,
-          row: "D",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowE1: [
-        {
-          num: 1,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 2,
-          row: "E",
-          available: false,
-          price: 30,
-        },
-        {
-          num: 3,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 4,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 5,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowE5: [
-        {
-          num: 6,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 7,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 8,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 9,
-          row: "E",
-          available: false,
-          price: 30,
-        },
-        {
-          num: 10,
-          row: "E",
-          available: false,
-          price: 30,
-        },
-      ],
-      rowE10: [
-        {
-          num: 11,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 12,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 13,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 14,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 15,
-          row: "E",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowF1: [
-        {
-          num: 1,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 2,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 3,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 4,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 5,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowF5: [
-        {
-          num: 6,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 7,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 8,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 9,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 10,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowF10: [
-        {
-          num: 11,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 12,
-          row: "F",
-          available: false,
-        },
-        {
-          num: 13,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 14,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 15,
-          row: "F",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowG1: [
-        {
-          num: 1,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 2,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 3,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 4,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 5,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowG5: [
-        {
-          num: 6,
-          row: "G",
-          available: false,
-          price: 30,
-        },
-        {
-          num: 7,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 8,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 9,
-          row: "G",
-          available: false,
-          price: 30,
-        },
-        {
-          num: 10,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowG10: [
-        {
-          num: 11,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 12,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 13,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 14,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-        {
-          num: 15,
-          row: "G",
-          available: true,
-          price: 30,
-        },
-      ],
-      rowH1: [
-        {
-          num: 1,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 2,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 3,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 4,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 5,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowH5: [
-        {
-          num: 6,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 7,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 8,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 9,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 10,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowH10: [
-        {
-          num: 11,
-          row: "H",
-          available: false,
-          price: 25,
-        },
-        {
-          num: 12,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 13,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 14,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 15,
-          row: "H",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowI1: [
-        {
-          num: 1,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 2,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 3,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 4,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 5,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowI5: [
-        {
-          num: 6,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 7,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 8,
-          row: "I",
-          available: false,
-          price: 25,
-        },
-        {
-          num: 9,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 10,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowI10: [
-        {
-          num: 11,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 12,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 13,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 14,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-        {
-          num: 15,
-          row: "I",
-          available: true,
-          price: 25,
-        },
-      ],
-      rowJ1: [
-        {
-          num: 1,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 2,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 3,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 4,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 5,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowJ5: [
-        {
-          num: 6,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 7,
-          row: "J",
-          available: false,
-          price: 22,
-        },
-        {
-          num: 8,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 9,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 10,
-          row: "J",
-          available: false,
-          price: 22,
-        },
-      ],
-      rowJ10: [
-        {
-          num: 11,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 12,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 13,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 14,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 15,
-          row: "J",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowK1: [
-        {
-          num: 1,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 2,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 3,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 4,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 5,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowK5: [
-        {
-          num: 6,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 7,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 8,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 9,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 10,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowK10: [
-        {
-          num: 11,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 12,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 13,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 14,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 15,
-          row: "K",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowL1: [
-        {
-          num: 1,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 2,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 3,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 4,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 5,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowL5: [
-        {
-          num: 6,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 7,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 8,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 9,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 10,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-      ],
-      rowL10: [
-        {
-          num: 11,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 12,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 13,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 14,
-          row: "L",
-          available: true,
-          price: 22,
-        },
-        {
-          num: 15,
-          row: "L",
-          available: true,
-          price: 22,
-        },
+      seats: [
+        [
+          {
+            num: 1,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 2,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 3,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 4,
+            row: "A",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 5,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 7,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 8,
+            row: "A",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 9,
+            row: "A",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 10,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 12,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 13,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 14,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 15,
+            row: "A",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 2,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 3,
+            row: "B",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 4,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 5,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 7,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 8,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 9,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 10,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "B",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 12,
+            row: "B",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 13,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 14,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 15,
+            row: "B",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 2,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 3,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 4,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 5,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 7,
+            row: "C",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 8,
+            row: "C",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 9,
+            row: "C",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 10,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 12,
+            row: "C",
+            available: false,
+            price: 38,
+            active: false
+          },
+          {
+            num: 13,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 14,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+          {
+            num: 15,
+            row: "C",
+            available: true,
+            price: 38,
+            active: false
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 2,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 3,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 4,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 5,
+            row: "D",
+            available: false,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 7,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 8,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 9,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 10,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 12,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 13,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 14,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 15,
+            row: "D",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 2,
+            row: "E",
+            available: false,
+            price: 30,
+          },
+          {
+            num: 3,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 4,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 5,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 7,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 8,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 9,
+            row: "E",
+            available: false,
+            price: 30,
+          },
+          {
+            num: 10,
+            row: "E",
+            available: false,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 12,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 13,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 14,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 15,
+            row: "E",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 2,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 3,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 4,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 5,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 7,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 8,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 9,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 10,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 12,
+            row: "F",
+            available: false,
+          },
+          {
+            num: 13,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 14,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 15,
+            row: "F",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 2,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 3,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 4,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 5,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "G",
+            available: false,
+            price: 30,
+          },
+          {
+            num: 7,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 8,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 9,
+            row: "G",
+            available: false,
+            price: 30,
+          },
+          {
+            num: 10,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 12,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 13,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 14,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+          {
+            num: 15,
+            row: "G",
+            available: true,
+            price: 30,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 2,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 3,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 4,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 5,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 7,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 8,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 9,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 10,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "H",
+            available: false,
+            price: 25,
+          },
+          {
+            num: 12,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 13,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 14,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 15,
+            row: "H",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 2,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 3,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 4,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 5,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 7,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 8,
+            row: "I",
+            available: false,
+            price: 25,
+          },
+          {
+            num: 9,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 10,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 12,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 13,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 14,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+          {
+            num: 15,
+            row: "I",
+            available: true,
+            price: 25,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 2,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 3,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 4,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 5,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 7,
+            row: "J",
+            available: false,
+            price: 22,
+          },
+          {
+            num: 8,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 9,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 10,
+            row: "J",
+            available: false,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 12,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 13,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 14,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 15,
+            row: "J",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 2,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 3,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 4,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 5,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 7,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 8,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 9,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 10,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 12,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 13,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 14,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 15,
+            row: "K",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 1,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 2,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 3,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 4,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 5,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 6,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 7,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 8,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 9,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 10,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+        ],
+        [
+          {
+            num: 11,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 12,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 13,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 14,
+            row: "L",
+            available: true,
+            price: 22,
+          },
+          {
+            num: 15,
+            row: "L",
+            available: true,
+            price: 22,
+          }
+        ],
       ],
     };
   },
@@ -1653,6 +1735,13 @@ export default {
       } else {
         seat.active = false;
       }
+    },
+    submitReservation() {
+      // let cart = [];
+      // cart = this.seats[0].filter(seat => seat.active === true);
+      // cart = this.seats.forEach(seat => seat.filter(seat => seat.active === true));
+      // console.log(cart);
+
     },
   },
 };
