@@ -519,7 +519,9 @@
     <p class="price__text">Total price: $143</p>
     <button class="price__back">back</button>
     <button class="price__submit">
-      <router-link @click="submitReservation" to="/tickets">submit </router-link>
+      <router-link @click="submitReservation" to="/tickets"
+        >submit
+      </router-link>
     </button>
   </div>
 </template>
@@ -534,35 +536,35 @@ export default {
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 2,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 3,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 4,
             row: "A",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 5,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -571,35 +573,35 @@ export default {
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 7,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 8,
             row: "A",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 9,
             row: "A",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 10,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -608,35 +610,35 @@ export default {
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 12,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 13,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 14,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 15,
             row: "A",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -645,35 +647,35 @@ export default {
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 2,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 3,
             row: "B",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 4,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 5,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -682,35 +684,35 @@ export default {
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 7,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 8,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 9,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 10,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -719,35 +721,35 @@ export default {
             row: "B",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 12,
             row: "B",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 13,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 14,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 15,
             row: "B",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -756,35 +758,35 @@ export default {
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 2,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 3,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 4,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 5,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -793,35 +795,35 @@ export default {
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 7,
             row: "C",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 8,
             row: "C",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 9,
             row: "C",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 10,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -830,35 +832,35 @@ export default {
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 12,
             row: "C",
             available: false,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 13,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 14,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
           {
             num: 15,
             row: "C",
             available: true,
             price: 38,
-            active: false
+            active: false,
           },
         ],
         [
@@ -1722,9 +1724,10 @@ export default {
             row: "L",
             available: true,
             price: 22,
-          }
+          },
         ],
       ],
+      cart: [],
     };
   },
   props: ["title", "author", "date", "time"],
@@ -1732,16 +1735,18 @@ export default {
     chooseSeat(seat) {
       if (seat.active != true) {
         seat.active = true;
+        this.cart.push(seat);
       } else {
         seat.active = false;
+        for (let i = 0; i < this.cart.length; i++) {
+          if (this.cart[i].num === seat.num) {
+            this.cart.splice(i, 1);
+          }
+        }
       }
     },
     submitReservation() {
-      // let cart = [];
-      // cart = this.seats[0].filter(seat => seat.active === true);
-      // cart = this.seats.forEach(seat => seat.filter(seat => seat.active === true));
-      // console.log(cart);
-
+      console.log(this.cart);
     },
   },
 };
