@@ -1739,7 +1739,7 @@ export default {
       } else {
         seat.active = false;
         for (let i = 0; i < this.cart.length; i++) {
-          if (this.cart[i].num === seat.num) {
+          if (this.cart[i].num === seat.num && this.cart[i].row === seat.row ) {
             this.cart.splice(i, 1);
           }
         }
