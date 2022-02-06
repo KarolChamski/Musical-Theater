@@ -1,51 +1,22 @@
 <template>
 
   <div class="ticket wrapper">
-    <div class="ticket__box">
-      <img class="ticket__img" src="../../src/assets/image1.jpg" alt="" />
+    <div class="ticket__box" v-for=" item in $store.state.cart" :key="item.num">
+      <img class="ticket__img" :src="item.image" alt="" />
       <div class="ticket__text">
-        <h3 class="ticket__title">Swan Lake</h3>
-        <p class="ticket__author">Tchaikowsky</p>
+        <h3 class="ticket__title">{{item.title}}</h3>
+        <p class="ticket__author">{{item.author}}</p>
         <p class="ticket__type">1x Adult</p>
-        <p class="ticket__row">Row: A</p>
-        <p class="ticket__seat">Seat: 3</p>
+        <p class="ticket__row">Row: {{item.row}}</p>
+        <p class="ticket__seat">Seat: {{item.num}}</p>
       </div>
       <div class="ticket__info">
-        <h3 class="ticket__date">17/01/2022</h3>
+        <h3 class="ticket__date">{{item.date}}</h3>
         <p class="ticket__time">9:00 a.m</p>
       </div>
-      <p class="ticket__edit">E</p>
+      <p class="ticket__edit">ołówek</p>
     </div>
-    <div class="ticket__box">
-      <img class="ticket__img" src="../../src/assets/image1.jpg" alt="" />
-      <div class="ticket__text">
-        <h3 class="ticket__title">Swan Lake</h3>
-        <p class="ticket__author">Tchaikowsky</p>
-        <p class="ticket__type">1x Adult</p>
-        <p class="ticket__row">Row: A</p>
-        <p class="ticket__seat">Seat: 3</p>
-      </div>
-      <div class="ticket__info">
-        <h3 class="ticket__date">17/01/2022</h3>
-        <p class="ticket__time">9:00 a.m</p>
-      </div>
-      <p class="ticket__edit">E</p>
-    </div>
-    <div class="ticket__box">
-      <img class="ticket__img" src="../../src/assets/image1.jpg" alt="" />
-      <div class="ticket__text">
-        <h3 class="ticket__title">Swan Lake</h3>
-        <p class="ticket__author">Tchaikowsky</p>
-        <p class="ticket__type">1x Adult</p>
-        <p class="ticket__row">Row: A</p>
-        <p class="ticket__seat">Seat: 3</p>
-      </div>
-      <div class="ticket__info">
-        <h3 class="ticket__date">17/01/2022</h3>
-        <p class="ticket__time">9:00 a.m</p>
-      </div>
-      <p class="ticket__edit">E</p>
-    </div>
+    
   </div>
 
   <div class="summary">
@@ -66,6 +37,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default{
+  props: ["image"]
+}
+</script>
+
 
 <style lang="scss" scoped>
 

@@ -4,7 +4,7 @@
   </div>
   <div class="product wrapper">
     <div class="product__box">
-      <img class="product__img" src="../../src/assets/image1.jpg" alt="" />
+      <img class="product__img" :src="image" alt="" />
 
       <div class="product__info">
         <div class="product__info-maintitle">
@@ -13,8 +13,16 @@
         </div>
         <h3 class="product__info-time">{{currTime}}</h3>
         <p class="product__info-text">{{ description1 }}</p>
-        <button class="product__info-btn"> <router-link to="/reservation">Buy ticket
-              </router-link></button>
+        <button class="product__info-btn"> <router-link :to="{
+                name: 'reservation',
+                params: {
+                  title: this.title,
+                  author: this.author,
+                  date: this.date,
+                  time: this.time,
+                  image: this.image
+                },
+              }">Buy ticket </router-link></button>
       </div>
     </div>
     <div class="product__date">
@@ -55,6 +63,8 @@
 export default {
   props: [
     "title",
+    "author",
+    "date",
     "description1",
     "description2",
     "description3",
@@ -62,6 +72,7 @@ export default {
     "description5",
     "staff1",
     "staff2",
+    "image"
   ],
 
   methods: {

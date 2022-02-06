@@ -14,6 +14,7 @@
             name: 'details',
             params: {
               title: $store.state.shows[0].title,
+                                author: $store.state.shows[0].author,
               description1: $store.state.shows[0].description,
               description2: $store.state.shows[0].description2,
               description3: $store.state.shows[0].description3,
@@ -21,6 +22,7 @@
               description5: $store.state.shows[0].description5,
               staff1: $store.state.shows[0].staff1,
               staff2: $store.state.shows[0].staff2,
+              image: $store.state.shows[0].image
             },
           }"
         >
@@ -47,6 +49,7 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[0].title,
+                                    author: $store.state.shows[0].author,
                   description1: $store.state.shows[0].description,
                   description2: $store.state.shows[0].description2,
                   description3: $store.state.shows[0].description3,
@@ -54,6 +57,7 @@
                   description5: $store.state.shows[0].description5,
                   staff1: $store.state.shows[0].staff1,
                   staff2: $store.state.shows[0].staff2,
+                  image: $store.state.shows[0].image,
                 },
               }"
               >Więcej</router-link
@@ -82,12 +86,14 @@
             name: 'details',
             params: {
               title: $store.state.shows[2].title,
+                                author: $store.state.shows[2].author,
               description1: $store.state.shows[2].description,
               description2: $store.state.shows[2].description2,
               description3: $store.state.shows[2].description3,
               description4: $store.state.shows[2].description4,
               staff1: $store.state.shows[2].staff1,
               staff2: $store.state.shows[2].staff2,
+              image: $store.state.shows[2].image
             },
           }"
         >
@@ -114,12 +120,14 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[2].title,
+                                    author: $store.state.shows[2].author,
                   description1: $store.state.shows[2].description,
                   description2: $store.state.shows[2].description2,
                   description3: $store.state.shows[2].description3,
                   description4: $store.state.shows[2].description4,
                   staff1: $store.state.shows[2].staff1,
                   staff2: $store.state.shows[2].staff2,
+                  image: $store.state.shows[2].image
                 },
               }"
               >Więcej</router-link
@@ -148,9 +156,11 @@
             name: 'details',
             params: {
               title: $store.state.shows[4].title,
+author: $store.state.shows[4].author,
               description1: $store.state.shows[4].description,
               staff1: $store.state.shows[4].staff1,
               staff2: $store.state.shows[4].staff2,
+              image: $store.state.shows[4].image,
             },
           }"
         >
@@ -177,9 +187,11 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[4].title,
+                  author: $store.state.shows[4].author,
                   description1: $store.state.shows[4].description,
                   staff1: $store.state.shows[4].staff1,
                   staff2: $store.state.shows[4].staff2,
+                  image: $store.state.shows[4].image,
                 },
               }"
               >Więcej</router-link
@@ -208,9 +220,11 @@
             name: 'details',
             params: {
               title: $store.state.shows[6].title,
+                                author: $store.state.shows[6].author,
               description1: $store.state.shows[6].description,
               staff1: $store.state.shows[6].staff1,
               staff2: $store.state.shows[6].staff2,
+              image: $store.state.shows[6].image,
             },
           }"
         >
@@ -235,9 +249,11 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[6].title,
+                                    author: $store.state.shows[6].author,
                   description1: $store.state.shows[6].description,
                   staff1: $store.state.shows[6].staff1,
                   staff2: $store.state.shows[6].staff2,
+                  image: $store.state.shows[6].image,
                 },
               }"
               >Więcej</router-link
@@ -275,6 +291,7 @@
             name: 'details',
             params: {
               title: premiere.title,
+              author: premiere.author,
               description1: premiere.description,
               description2: premiere.description2,
               description3: premiere.description3,
@@ -282,6 +299,7 @@
               description5: premiere.description5,
               staff1: premiere.staff1,
               staff2: premiere.staff2,
+              image: premiere.image,
             },
           }"
         >

@@ -537,6 +537,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
@@ -544,6 +549,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
@@ -551,6 +561,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
@@ -558,6 +573,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
@@ -565,6 +585,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -574,6 +599,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
@@ -581,6 +611,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
@@ -588,6 +623,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
@@ -595,6 +635,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
@@ -602,6 +647,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -611,6 +661,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
@@ -618,6 +673,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
@@ -625,6 +685,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
@@ -632,6 +697,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
@@ -639,6 +709,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -648,6 +723,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
@@ -655,6 +735,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
@@ -662,6 +747,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
@@ -669,6 +759,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
@@ -676,6 +771,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -685,6 +785,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
@@ -692,6 +797,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
@@ -699,6 +809,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
@@ -706,6 +821,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
@@ -713,6 +833,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -722,6 +847,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
@@ -729,6 +859,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
@@ -736,6 +871,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
@@ -743,6 +883,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
@@ -750,6 +895,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -759,6 +909,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
@@ -766,6 +921,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
@@ -773,6 +933,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
@@ -780,6 +945,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
@@ -787,6 +957,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -796,6 +971,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
@@ -803,6 +983,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
@@ -810,6 +995,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
@@ -817,6 +1007,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
@@ -824,6 +1019,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -833,6 +1033,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
@@ -840,6 +1045,11 @@ export default {
             available: false,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
@@ -847,6 +1057,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
@@ -854,6 +1069,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
@@ -861,6 +1081,11 @@ export default {
             available: true,
             price: 38,
             active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -869,30 +1094,60 @@ export default {
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "D",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -901,30 +1156,60 @@ export default {
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -933,30 +1218,60 @@ export default {
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "D",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -965,30 +1280,60 @@ export default {
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "E",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -997,30 +1342,60 @@ export default {
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "E",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "E",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1029,30 +1404,60 @@ export default {
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "E",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1061,30 +1466,60 @@ export default {
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1093,30 +1528,60 @@ export default {
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1125,29 +1590,60 @@ export default {
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "F",
             available: false,
+            price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "F",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1156,30 +1652,60 @@ export default {
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1188,30 +1714,60 @@ export default {
             row: "G",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "G",
             available: false,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1220,30 +1776,60 @@ export default {
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "G",
             available: true,
             price: 30,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1252,30 +1838,60 @@ export default {
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1284,30 +1900,60 @@ export default {
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1316,30 +1962,60 @@ export default {
             row: "H",
             available: false,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "H",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1348,30 +2024,60 @@ export default {
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1380,30 +2086,60 @@ export default {
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "I",
             available: false,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1412,30 +2148,60 @@ export default {
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "I",
             available: true,
             price: 25,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1444,30 +2210,60 @@ export default {
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1476,30 +2272,60 @@ export default {
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "J",
             available: false,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "J",
             available: false,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1508,30 +2334,60 @@ export default {
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "J",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1540,30 +2396,60 @@ export default {
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1572,30 +2458,60 @@ export default {
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1604,30 +2520,60 @@ export default {
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "K",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1636,30 +2582,60 @@ export default {
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 2,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 3,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 4,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 5,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1668,30 +2644,60 @@ export default {
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 7,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 8,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 9,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 10,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
         [
@@ -1700,37 +2706,67 @@ export default {
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 12,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 13,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 14,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
           {
             num: 15,
             row: "L",
             available: true,
             price: 22,
+            active: false,
+            title: this.title,
+            author: this.author,
+            date: this.date,
+            time: '9:00 a.m',
+            image: this.image
           },
         ],
       ],
       cart: [],
     };
   },
-  props: ["title", "author", "date", "time"],
+  props: ["title", "author", "date", "time", "image"],
   methods: {
     chooseSeat(seat) {
       if (seat.active != true) {
@@ -1746,7 +2782,9 @@ export default {
       }
     },
     submitReservation() {
-      console.log(this.cart);
+      this.cart.forEach(item => this.$store.commit('updateCart', item))
+      // this.$store.commit('updateCart', this.cart);
+      console.log(this.$store.state.cart);
     },
   },
 };

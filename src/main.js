@@ -18,12 +18,12 @@ const router = createRouter({
     routes: [
       { path: '/home',  component: Home, alias: '/' },
       { path: '/details', name: 'details', component: Product, props: true },
-      { path: '/schedule', name: 'schedule', component: Schedule, },
-      { path: '/cart', name: 'cart', component: Cart, },
-      { path: '/tickets', name: 'tickets', component: Tickets, },
-      { path: '/ticket', name: 'ticket', component: Ticket, },
+      { path: '/schedule', name: 'schedule', component: Schedule, props: true },
+      { path: '/cart', name: 'cart', component: Cart, props: true},
+      { path: '/tickets', name: 'tickets', component: Tickets, props: true},
+      { path: '/ticket', name: 'ticket', component: Ticket, props: true },
       { path: '/reservation', name: 'reservation', component: Reservation, props: true },
-      { path: '/news', name: 'news', component: News, },
+      { path: '/news', name: 'news', component: News, props: true },
     ],
     linkActiveClass: "active",
   });

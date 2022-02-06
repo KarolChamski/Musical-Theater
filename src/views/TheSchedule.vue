@@ -36,6 +36,7 @@
               description5: show.description5,
               staff1: show.staff1,
               staff2: show.staff2,
+              image: show.image
             },
           }"
         >
@@ -56,6 +57,7 @@
                   description5: show.description5,
                   staff1: show.staff1,
                   staff2: show.staff2,
+                  image: show.image
                 },
               }"
             >
@@ -79,6 +81,7 @@
                 description5: show.description5,
                 staff1: show.staff1,
                 staff2: show.staff2,
+                image: show.image
               },
             }"
           >
@@ -92,7 +95,9 @@
                   title: show.title,
                   author: show.author,
                   date: show.date,
-                  time: show.time
+                  time: show.time,
+                  image: show.image
+                  
                 },
               }">Buy ticket </router-link>
           </button>

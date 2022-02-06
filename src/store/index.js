@@ -269,4 +269,9 @@ export default createStore({
     ],
     cart: []
   },
+  mutations: {
+    updateCart (state, item) {
+      state.cart.push(item)
+    }
+  }
 });
