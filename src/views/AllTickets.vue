@@ -12,12 +12,22 @@
         <p class="ticket__seat">{{item.num}}</p>
       </div>
       <div class="ticket__info">
-        <h3 class="ticket__date">{{item.date}}</h3>
+        <h3 class="ticket__date">{{item.date}}/01/2022</h3>
         <p class="ticket__time">{{item.time}}</p>
       </div>
       <div class="ticket__buttons">
         <button class="ticket__btn">
-          <router-link to="/ticket">Show </router-link>
+                      <router-link :to="{
+                name: 'ticket',
+                params: {
+                  title: item.title,
+                  date: item.date,
+                  time: item.time,
+                  image: item.image,
+                  row: item.row,
+                  num: item.num
+                },
+              }">Show</router-link>
         </button>
         <button class="ticket__btn">Download</button>
       </div>

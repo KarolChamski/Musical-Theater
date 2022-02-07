@@ -14,7 +14,7 @@
             name: 'details',
             params: {
               title: $store.state.shows[0].title,
-                                author: $store.state.shows[0].author,
+              author: $store.state.shows[0].author,
               description1: $store.state.shows[0].description,
               description2: $store.state.shows[0].description2,
               description3: $store.state.shows[0].description3,
@@ -49,7 +49,7 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[0].title,
-                                    author: $store.state.shows[0].author,
+                  author: $store.state.shows[0].author,
                   description1: $store.state.shows[0].description,
                   description2: $store.state.shows[0].description2,
                   description3: $store.state.shows[0].description3,
@@ -73,6 +73,7 @@
                   author: $store.state.shows[0].author,
                   date: $store.state.shows[0].date,
                   time: $store.state.shows[0].time,
+                  image: $store.state.shows[0].image,
                 },
               }"
               >Buy ticket
@@ -86,7 +87,7 @@
             name: 'details',
             params: {
               title: $store.state.shows[2].title,
-                                author: $store.state.shows[2].author,
+              author: $store.state.shows[2].author,
               description1: $store.state.shows[2].description,
               description2: $store.state.shows[2].description2,
               description3: $store.state.shows[2].description3,
@@ -120,7 +121,7 @@
                 name: 'details',
                 params: {
                   title: $store.state.shows[2].title,
-                                    author: $store.state.shows[2].author,
+                  author: $store.state.shows[2].author,
                   description1: $store.state.shows[2].description,
                   description2: $store.state.shows[2].description2,
                   description3: $store.state.shows[2].description3,
@@ -142,6 +143,7 @@
                   author: $store.state.shows[2].author,
                   date: $store.state.shows[2].date,
                   time: $store.state.shows[2].time,
+                  image: $store.state.shows[2].image,
                 },
               }"
               >Kup bilet
@@ -206,6 +208,7 @@ author: $store.state.shows[4].author,
                   author: $store.state.shows[4].author,
                   date: $store.state.shows[4].date,
                   time: $store.state.shows[4].time,
+                  image: $store.state.shows[4].image,
                 },
               }"
               >Kup bilet
@@ -220,7 +223,7 @@ author: $store.state.shows[4].author,
             name: 'details',
             params: {
               title: $store.state.shows[6].title,
-                                author: $store.state.shows[6].author,
+              author: $store.state.shows[6].author,
               description1: $store.state.shows[6].description,
               staff1: $store.state.shows[6].staff1,
               staff2: $store.state.shows[6].staff2,
@@ -249,7 +252,7 @@ author: $store.state.shows[4].author,
                 name: 'details',
                 params: {
                   title: $store.state.shows[6].title,
-                                    author: $store.state.shows[6].author,
+                  author: $store.state.shows[6].author,
                   description1: $store.state.shows[6].description,
                   staff1: $store.state.shows[6].staff1,
                   staff2: $store.state.shows[6].staff2,
@@ -268,6 +271,7 @@ author: $store.state.shows[4].author,
                   author: $store.state.shows[6].author,
                   date: $store.state.shows[6].date,
                   time: $store.state.shows[6].time,
+                  image: $store.state.shows[6].image,
                 },
               }"
               >Kup bilet

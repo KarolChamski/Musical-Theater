@@ -10,20 +10,20 @@
     <p class="ticket__text">Title:</p>
     <div class="ticket__box">
       <div class="ticket__title">
-        <h3 class="ticket__title">Swan Lake</h3>
+        <h3 class="ticket__title">{{title}}</h3>
         <p class="ticket__title-sector">Big Scene</p>
       </div>
       <div class="ticket__info">
-        <p class="ticket__info">5:30 p.m</p>
-        <p class="ticket__time">03/02/2022</p>
+        <p class="ticket__info">{{time}}</p>
+        <p class="ticket__time">{{date}}/01/2022</p>
       </div>
     </div>
     <p class="ticket__type">1x Regular ticket</p>
 
     <div class="ticket__moreInfo">
       <p class="ticket__sector">Sector: Big Scene</p>
-      <p class="ticket__row">Row: A</p>
-      <p class="ticket__seat">Seat: 3</p>
+      <p class="ticket__row">Row: {{row}}</p>
+      <p class="ticket__seat">Seat: {{num}}</p>
     </div>
     <p class="ticket__message">Please do not copy!</p>
 
@@ -39,6 +39,18 @@
   <button class="button">Print</button>
   <button class="button">Download</button>
 </template>
+
+<script>
+export default{
+    props: [
+    "title",
+    "date",
+    "time",
+    "row",
+    'num'
+  ]
+}
+</script>
 
 <style lang="scss" scoped>
 .ticket {

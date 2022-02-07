@@ -36,7 +36,8 @@
               description5: show.description5,
               staff1: show.staff1,
               staff2: show.staff2,
-              image: show.image
+              image: show.image,
+              date: show.date = this.currDate
             },
           }"
         >
