@@ -1,6 +1,8 @@
 <template>
-<div class="back">
-    <button class="back__btn"><router-link to="/tickets">Back </router-link></button>
+  <div class="back">
+    <button class="back__btn">
+      <router-link to="/tickets">Back </router-link>
+    </button>
   </div>
   <div class="ticket wrapper">
     <h2 class="ticket__logo">LOGO</h2>
@@ -34,8 +36,8 @@
     <img class="ticket__qrCode" src="../../src/assets/qrcode.svg" alt="" />
   </div>
 
-   <button class="button">Print </button>
-          <button class="button">Download</button>
+  <button class="button">Print</button>
+  <button class="button">Download</button>
 </template>
 
 <style lang="scss" scoped>
@@ -100,16 +102,16 @@
     font-weight: bold;
     font-size: 24px;
     text-align: center;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
   }
   &__validateInformation,
   &__icon {
-      margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     text-align: center;
   }
   &__icon {
     position: relative;
-    padding: .7rem;
+    padding: 0.7rem;
   }
   &__qrCode {
     width: 80%;
@@ -117,17 +119,17 @@
     margin: 0 auto;
   }
 }
-.button{
-      width: 120px;
-      border:none;
-     background-color: black;
-     color: white;
-      text-transform: uppercase;
-      text-align: center;
-      padding: .8rem 1rem;
-      margin-left: 1rem;
-      margin-bottom: 8rem;
-      cursor: pointer;
+.button {
+  width: 120px;
+  border: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-left: 1rem;
+  margin-bottom: 8rem;
+  cursor: pointer;
 }
 hr {
   border: none;
@@ -145,10 +147,10 @@ hr {
   margin: 6rem 0 2rem 10rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  a{
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
+  a {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
   }
 }
 </style>

@@ -519,7 +519,7 @@
     <p class="price__text">Total price: $143</p>
     <button class="price__back">back</button>
     <button class="price__submit">
-      <router-link @click="submitReservation" to="/tickets"
+      <router-link @click="submitReservation" to="/cart"
         >submit
       </router-link>
     </button>

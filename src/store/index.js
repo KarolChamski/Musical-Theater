@@ -267,11 +267,16 @@ export default createStore({
        image: require('../../public/img/train.jpg')
      },
     ],
-    cart: []
+    cart: [],
+    tickets: []
   },
   mutations: {
     updateCart (state, item) {
       state.cart.push(item)
+    },
+    addToTicket(state){
+      state.tickets = state.cart;
+      
     }
   }
 });

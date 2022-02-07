@@ -32,7 +32,9 @@
       </div>
       <div class="summary__total wrapper">
         <h3 class="summary__price">Total price 143 $</h3>
-        <button class="summary__submit">Submit</button>
+        <button class="summary__submit"><router-link @click="submitCart" to="/tickets"
+        >submit
+      </router-link></button>
       </div>
     </div>
   </div>
@@ -40,7 +42,12 @@
 
 <script>
 export default{
-  props: ["image"]
+  props: ["image"],
+  methods:{
+    submitCart(){
+      this.$store.commit('addToTicket')
+    }
+  }
 }
 </script>
 
