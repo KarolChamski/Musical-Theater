@@ -9,7 +9,7 @@
       <div class="product__info">
         <div class="product__info-maintitle">
           <h3 class="product__info-title">{{ title }}</h3>
-          <h3 class="product__info-data">{{currDate}}</h3>
+          <h3 class="product__info-data">{{currDate}}/01/2022</h3>
         </div>
         <h3 class="product__info-time">{{currTime}}</h3>
         <p class="product__info-text">{{ description1 }}</p>
