@@ -11,10 +11,10 @@
         <p class="ticket__seat">Seat: {{item.num}}</p>
       </div>
       <div class="ticket__info">
-        <h3 class="ticket__date">{{item.date}}</h3>
+        <h3 class="ticket__date">{{item.date}}/01/2022</h3>
         <p class="ticket__time">9:00 a.m</p>
       </div>
-      <p class="ticket__edit">ołówek</p>
+      <img class="ticket__edit" src="../../src/assets/edit.svg" alt="">
     </div>
     
   </div>
@@ -32,7 +32,7 @@
       </div>
       <div class="summary__total wrapper">
         <h3 class="summary__price">Total price 143 $</h3>
-        <button class="summary__submit"><router-link @click="submitCart" to="/tickets"
+        <button class="summary__submit"><router-link @click="submitCart" to="/confirmation"
         >submit
       </router-link></button>
       </div>
@@ -72,6 +72,10 @@ export default{
   &__info,
   &__edit {
     margin-top: 0.5rem;
+  }
+  &__edit{
+  align-self: flex-start;
+  cursor: pointer;
   }
 
   &__info {

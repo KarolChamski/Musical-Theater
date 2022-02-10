@@ -2,8 +2,8 @@
   <div class="calendar">
     <div class="calendar__title wrapper">
       <h3 class="calendar__month">January 2022</h3>
-      <button class="calendar__arrow">left</button>
-      <button class="calendar__arrow">right</button>
+      <button class="calendar__arrow"><img class="left" src="../../src/assets/arrow1.svg" alt=""></button>
+      <button class="calendar__arrow"><img src="../../src/assets/arrow1.svg" alt=""></button>
     </div>
     <div class="calendar__days wrapper">
       <button
@@ -167,6 +167,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.left{
+  transform: rotate(180deg);
+}
 .calendar {
   padding: 3rem 0;
   &__title {
@@ -182,6 +185,7 @@ export default {
     text-transform: uppercase;
     margin-right: 1rem;
     color: white;
+    cursor: pointer;
   }
   &__btn {
     border: none;
@@ -206,6 +210,7 @@ export default {
 }
 
 .schedule {
+  margin-bottom: 5rem;
   a {
     color: #000;
   }

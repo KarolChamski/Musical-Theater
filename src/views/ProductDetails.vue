@@ -13,12 +13,12 @@
         </div>
         <h3 class="product__info-time">{{currTime}}</h3>
         <p class="product__info-text">{{ description1 }}</p>
-        <button class="product__info-btn"> <router-link :to="{
+        <button @click="test" class="product__info-btn"> <router-link :to="{
                 name: 'reservation',
                 params: {
                   title: this.title,
                   author: this.author,
-                  date: this.date,
+                  date: this.currDate,
                   time: this.time,
                   image: this.image
                 },
@@ -64,7 +64,6 @@ export default {
   props: [
     "title",
     "author",
-    "date",
     "description1",
     "description2",
     "description3",
@@ -81,6 +80,9 @@ export default {
       date.active = true;
       this.currDate = date.date;
       this.currTime = date.time;
+    },
+    test(){
+      console.log(this.currDate);
     }
   },
 
@@ -88,25 +90,25 @@ export default {
     return {
       availableDates: [
         {
-          date: "03/01/2022",
+          date: "03",
           time: "4:00 pm",
           day: "Saturday",
           active: false,
         },
         {
-          date: "06/01/2022",
+          date: "06",
           time: "3:30 pm",
           day: "Tuesday",
           active: false,
         },
         {
-          date: "14/01/2022",
+          date: "14",
           time: "4:00 pm",
           day: "Friday",
           active: false,
         },
         {
-          date: "27/01/2022",
+          date: "27",
           time: "3:30 pm",
           day: "Saturday",
           active: false,

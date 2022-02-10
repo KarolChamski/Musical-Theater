@@ -14,7 +14,7 @@
         <p class="reservation__sector">Big Scene</p>
       </div>
       <div class="reservation__box">
-        <p class="reservation__date">17/02/2022</p>
+        <p class="reservation__date">{{this.date}}/01/2022</p>
         <p class="reservation__time">/ 9:00 a.m</p>
       </div>
     </div>

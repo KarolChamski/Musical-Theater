@@ -1,29 +1,34 @@
 <template>
 <footer>
-    <div class="footer__container">
-        <div class="footer__logo">
-            <h2>LOGO</h2>
+    <div class="container">
+        <div class="logo">
+             <router-link to="/home">
+            <img  src="../../src/assets/logo.svg" alt="">
+            </router-link>
         </div>
-        <div class="footer__newsletter">
-            <p class="footer__newsletter-title">Newsletter</p>
-            <p class="footer__newsletter-description">Subscribe to the newsletter and receive notifications about premieres on an ongoing </p>
-            <input class="footer__newsletter-input" type="text" placeholder="Enter your e-mail">
-            <button class="footer__newsletter-btn">></button>
+        <div class="newsletter">
+            <p class="newsletter__title">Newsletter</p>
+            <p class="newsletter__description">Subscribe to the newsletter and receive notifications about premieres on an ongoing </p>
+            <div class="newsletter__box">
+
+            <input class="newsletter__input" type="email" id="email" placeholder="Enter your e-mail">
+            <button class="newsletter__btn"> <img class="footer__newsletter-arrow" src="../../src/assets/arrow1.svg" alt=""></button>
+            </div>
         </div>
-        <div class="footer__links">
-            <ul class="footer__list">
-                <li><a href="">Customer service</a></li>
+        <div class="links">
+            <ul class="list">
+                <li><a href="">  Customer service </a></li>
                 <li><a href="">Privacy policy</a></li>
                 <li><a href="">Regulations</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
-        <div class="footer__links">
-           <ul class="footer__links">
+        <div class="links">
+           <ul class="links">
                 <li><a href="">Gift cards</a></li>
                 <li><a href="">Returns and complains</a></li>
                 <li><a href="">Newsletter</a></li>
-                <li><a href="">1</a><a href="">2</a><a href="">3</a></li>
+                <li><img class="links__icon" src="../../src/assets/facebook.svg" alt=""> <img class="links__icon" src="../../src/assets/instagram.svg" alt=""> <img class="links__icon" src="../../src/assets/youtube.svg" alt=""></li>
             </ul>
            
         </div>
@@ -34,52 +39,67 @@
 
 <style lang="scss" scoped>
 
-.footer{
-   
-    &__container{
+footer{
+
+    .container{
         background-color: #F6F6F6;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 4rem 2rem;
+        padding: 4rem 3rem;
     }
-    &__newsletter{
+    .newsletter{
         text-align: left;
         width: 400px;
 
-        &-title{
+        &__title{
             font-size: 1.5rem;
         }
-        &-description{
+        &__description{
             margin: .5rem 0;
             line-height: 24px;
             color: rgb(173, 173, 173);
         }
-        &-input{
+        &__input{
             padding: .5rem ;
             width: 300px;
             border: 1px solid rgb(194, 194, 194);
             
         }
-        &-btn{
+        &__box{
+            display: flex;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+            align-self: center;
             border: none;
             background-color: black;
             color:white;
             padding: .5rem .7rem;
             margin-left: .5rem;
+            cursor: pointer;
+            
         }
+       
     }
 
-    &__links li {
+    .links li {
         list-style: none;
         text-align: left;
         margin: 1rem 0;
         }
 
-    &__links li a{
+   .links li a{
         text-decoration: none;
         color: black;
         list-style: none;
         }
+       .links__icon{
+           width: 20px;
+           padding: .3rem;
+           cursor: pointer;
+           margin: 0 .2rem;
+       }
 }
 </style>

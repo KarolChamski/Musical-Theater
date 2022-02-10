@@ -10,6 +10,7 @@ import Ticket from './views/TheTicket.vue'
 import Reservation from './views/ReservationPage.vue'
 import News from './views/NewsPage.vue'
 import store from './store'
+import Confirmation from './views/Confirmation.vue'
 
 
 
@@ -24,6 +25,7 @@ const router = createRouter({
       { path: '/ticket', name: 'ticket', component: Ticket, props: true },
       { path: '/reservation', name: 'reservation', component: Reservation, props: true },
       { path: '/news', name: 'news', component: News, props: true },
+      { path: '/confirmation', name: 'confirmation', component: Confirmation, props: true },
     ],
     linkActiveClass: "active",
   });

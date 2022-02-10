@@ -1,5 +1,6 @@
 <template>
   <div class="ticket wrapper">
+    <h3 class="title">My tickets</h3>
     <div class="ticket__box" v-for="item in $store.state.tickets" :key="item.num">
       <div class="ticket__image">
         <img class="ticket__img" :src="item.image" alt="" />
@@ -36,8 +37,14 @@
 </template>
 
 <style lang="scss" scoped>
+
+.title{
+margin-bottom: 2rem;
+font-size: 30px;
+}
 .ticket {
-  margin-top: 10rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
   &__img {
     width: 200px;
   }

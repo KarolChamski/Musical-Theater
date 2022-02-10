@@ -5,7 +5,7 @@
     </button>
   </div>
   <div class="ticket wrapper">
-    <h2 class="ticket__logo">LOGO</h2>
+  <img class="ticket__logo" src="../../src/assets/logo.svg" alt="">
     <p class="ticket__number">1D56FVY63</p>
     <p class="ticket__text">Title:</p>
     <div class="ticket__box">
@@ -27,11 +27,12 @@
     </div>
     <p class="ticket__message">Please do not copy!</p>
 
-    <p class="ticket__place">Musical Theater in Gdynia</p>
+    <p class="ticket__place">Musical Theater in Gdańsk</p>
     <p class="ticket__validateInformation">
       This is your admission ticket, validate your ticket before entering
     </p>
-    <p class="ticket__icon">U</p>
+     <img class="ticket__icon" src="../../src/assets/arrow.svg" alt="">
+    
     <hr />
     <img class="ticket__qrCode" src="../../src/assets/qrcode.svg" alt="" />
   </div>
@@ -101,7 +102,7 @@ export default{
   }
   &__message {
     position: absolute;
-    bottom: 350px;
+    bottom: 370px;
     right: -35px;
     transform: rotate(-90deg);
     color: rgb(173, 173, 173);
@@ -124,6 +125,8 @@ export default{
   &__icon {
     position: relative;
     padding: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__qrCode {
     width: 80%;

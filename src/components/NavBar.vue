@@ -1,8 +1,9 @@
 <template>
     <div class="navbar">
         <div class="navbar__logo">
-            <h2><router-link to="/home">LOGO</router-link></h2>
-            
+            <router-link to="/home">
+            <img  src="../../src/assets/logo.svg" alt="">
+            </router-link>
             </div>
         <div class="navbar__search">
             <input class="navbar__input" type="text" placeholder="Szukaj">
@@ -14,8 +15,7 @@
             <button>
                  <router-link to="/tickets">
                  tickets </router-link> </button>
-            <button> <router-link to="/cart">🛒 </router-link></button>
-            <button>🙍‍♂️</button>
+            <button> <router-link to="/cart"> cart </router-link></button>
         </div>
     </div>
 </template>
@@ -45,13 +45,18 @@ a{
             border: 1px solid rgb(194, 194, 194);
             
         }
+        &__buttons{
+            margin-right: 2rem;
+        }
 }
 button{
-    margin: 0 .5rem;
+    margin: 0 .8rem;
     border: none;
     background-color: transparent;
     text-transform: uppercase;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: .5rem .5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 </style>
