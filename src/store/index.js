@@ -275,10 +275,9 @@ export default createStore({
       state.cart.push(item)
     },
     addToTicket(state){
-      console.log(state.cart);
      state.tickets = state.cart;
      state.cart = [];
-     console.log(state.cart);
+
     },
   }
 });

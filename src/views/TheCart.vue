@@ -7,6 +7,8 @@
         <h3 class="ticket__title">{{item.title}}</h3>
         <p class="ticket__author">{{item.author}}</p>
         <p class="ticket__type">1x Adult</p>
+        <p class="ticket__type">$ {{item.price}}</p>
+        
         <p class="ticket__row">Row: {{item.row}}</p>
         <p class="ticket__seat">Seat: {{item.num}}</p>
       </div>
@@ -31,8 +33,8 @@
         <button class="summary__payment-method">Credit card E</button>
       </div>
       <div class="summary__total wrapper">
-        <h3 class="summary__price">Total price 143 $</h3>
-        <button class="summary__submit"><router-link @click="submitCart" to="/confirmation"
+        <h3 class="summary__price">Total price {{totalPrice}} $</h3>
+        <button class="summary__submit" @click="submitCart"><router-link to="/confirmation"
         >submit
       </router-link></button>
       </div>
@@ -42,10 +44,19 @@
 
 <script>
 export default{
+
   props: ["image"],
   methods:{
     submitCart(){
-      this.$store.commit('addToTicket')
+      if(this.$store.state.cart.length !== 0){
+        this.$store.commit('addToTicket');
+        console.log('ELO');
+      }
+    }
+  },
+  computed:{
+    totalPrice(){
+      return this.$store.state.cart.reduce ((acc,cur) =>  acc + cur.price , 0)
     }
   }
 }
