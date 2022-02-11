@@ -50,6 +50,7 @@ a{
   text-align: center;
   color: #000000;
   margin-top: 40px;
+  min-height: 100vh;
 }
 .navbar{
   top: 0;

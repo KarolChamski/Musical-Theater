@@ -34,7 +34,7 @@
           :class="{product__border: item.active}"
           :key="item.date" @click="selectDate(item)"
         >
-          <p class="product__date-date">{{ item.date }}</p>
+          <p class="product__date-date">{{ item.date }}/01/2022</p>
           <p class="product__date-time">{{ item.time }}</p>
           <p class="product__date-day">{{ item.day }}</p>
         </button>

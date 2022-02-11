@@ -516,7 +516,7 @@
   </div>
 
   <div class="price wrapper">
-    <p class="price__text">Total price: $143</p>
+    <p class="price__text">Total price: ${{totalPrice}}</p>
     <button class="price__back">back</button>
     <button class="price__submit">
       <router-link @click="submitReservation" to="/cart"
@@ -2787,6 +2787,11 @@ export default {
       console.log(this.$store.state.cart);
     },
   },
+  computed:{
+        totalPrice(){
+      return this.cart.reduce ((acc,cur) =>  acc + cur.price , 0)
+    }
+  }
 };
 </script>
 

@@ -1,6 +1,7 @@
 <template>
 
   <div class="ticket wrapper">
+            <h3 class="ticket__title" v-if="$store.state.cart.length == 0">Your cart is empty</h3>
     <div class="ticket__box" v-for=" item in $store.state.cart" :key="item.num">
       <img class="ticket__img" :src="item.image" alt="" />
       <div class="ticket__text">

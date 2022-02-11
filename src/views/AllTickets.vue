@@ -1,6 +1,7 @@
 <template>
   <div class="ticket wrapper">
     <h3 class="title">My tickets</h3>
+    <h3 v-if="$store.state.tickets.length == 0">You don't have any tickets</h3>
     <div class="ticket__box" v-for="item in $store.state.tickets" :key="item.num">
       <div class="ticket__image">
         <img class="ticket__img" :src="item.image" alt="" />

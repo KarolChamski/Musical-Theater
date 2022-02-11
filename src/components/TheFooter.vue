@@ -41,6 +41,7 @@
 
 footer{
 
+
     .container{
         background-color: #F6F6F6;
         display: flex;
