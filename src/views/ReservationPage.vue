@@ -1,7 +1,7 @@
 <template>
   <div class="back">
     <button class="back__btn">
-      <router-link to="/tickets">Back </router-link>
+      <router-link to="/schedule">Back </router-link>
     </button>
   </div>
   <div class="reservation wrapper">
@@ -15,7 +15,7 @@
       </div>
       <div class="reservation__box">
         <p class="reservation__date">{{this.date}}/01/2022</p>
-        <p class="reservation__time">/ 9:00 a.m</p>
+        <p class="reservation__time">{{this.time}}</p>
       </div>
     </div>
   </div>
@@ -518,11 +518,11 @@
   <div class="price wrapper">
     <p class="price__text">Total price: ${{totalPrice}}</p>
     <button class="price__back">back</button>
-    <button class="price__submit">
+    
       <router-link @click="submitReservation" to="/cart"
-        >submit
+        > <button class="price__submit">submit</button> 
       </router-link>
-    </button>
+    
   </div>
 </template>
 <script>
@@ -540,7 +540,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -552,7 +552,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -564,7 +564,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -576,7 +576,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -588,7 +588,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -602,7 +602,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -614,7 +614,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -626,7 +626,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -638,7 +638,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -650,7 +650,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -664,7 +664,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -676,7 +676,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -688,7 +688,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -700,7 +700,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -712,7 +712,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -726,7 +726,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -738,7 +738,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -750,7 +750,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -762,7 +762,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -774,7 +774,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -788,7 +788,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -800,7 +800,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -812,7 +812,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -824,7 +824,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -836,7 +836,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -850,7 +850,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -862,7 +862,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -874,7 +874,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -886,7 +886,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -898,7 +898,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -912,7 +912,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -924,7 +924,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -936,7 +936,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -948,7 +948,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -960,7 +960,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -974,7 +974,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -986,7 +986,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -998,7 +998,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1010,7 +1010,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1022,7 +1022,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1036,7 +1036,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1048,7 +1048,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1060,7 +1060,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1072,7 +1072,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1084,7 +1084,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1098,7 +1098,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1110,7 +1110,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1122,7 +1122,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1134,7 +1134,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1146,7 +1146,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1160,7 +1160,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1172,7 +1172,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1184,7 +1184,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1196,7 +1196,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1208,7 +1208,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1222,7 +1222,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1234,7 +1234,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1246,7 +1246,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1258,7 +1258,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1270,7 +1270,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1284,7 +1284,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1296,7 +1296,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1308,7 +1308,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1320,7 +1320,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1332,7 +1332,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1346,7 +1346,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1358,7 +1358,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1370,7 +1370,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1382,7 +1382,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1394,7 +1394,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1408,7 +1408,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1420,7 +1420,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1432,7 +1432,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1444,7 +1444,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1456,7 +1456,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1470,7 +1470,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1482,7 +1482,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1494,7 +1494,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1506,7 +1506,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1518,7 +1518,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1532,7 +1532,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1544,7 +1544,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1556,7 +1556,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1568,7 +1568,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1580,7 +1580,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1594,7 +1594,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1606,7 +1606,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1618,7 +1618,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1630,7 +1630,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1642,7 +1642,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1656,7 +1656,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1668,7 +1668,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1680,7 +1680,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1692,7 +1692,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1704,7 +1704,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1718,7 +1718,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1730,7 +1730,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1742,7 +1742,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1754,7 +1754,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1766,7 +1766,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1780,7 +1780,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1792,7 +1792,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1804,7 +1804,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1816,7 +1816,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1828,7 +1828,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1842,7 +1842,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1854,7 +1854,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1866,7 +1866,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1878,7 +1878,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1890,7 +1890,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1904,7 +1904,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1916,7 +1916,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1928,7 +1928,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1940,7 +1940,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1952,7 +1952,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -1966,7 +1966,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1978,7 +1978,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -1990,7 +1990,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2002,7 +2002,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2014,7 +2014,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2028,7 +2028,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2040,7 +2040,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2052,7 +2052,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2064,7 +2064,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2076,7 +2076,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2090,7 +2090,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2102,7 +2102,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2114,7 +2114,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2126,7 +2126,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2138,7 +2138,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2152,7 +2152,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2164,7 +2164,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2176,7 +2176,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2188,7 +2188,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2200,7 +2200,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2214,7 +2214,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2226,7 +2226,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2238,7 +2238,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2250,7 +2250,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2262,7 +2262,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2276,7 +2276,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2288,7 +2288,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2300,7 +2300,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2312,7 +2312,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2324,7 +2324,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2338,7 +2338,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2350,7 +2350,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2362,7 +2362,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2374,7 +2374,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2386,7 +2386,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2400,7 +2400,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2412,7 +2412,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2424,7 +2424,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2436,7 +2436,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2448,7 +2448,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2462,7 +2462,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2474,7 +2474,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2486,7 +2486,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2498,7 +2498,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2510,7 +2510,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2524,7 +2524,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2536,7 +2536,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2548,7 +2548,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2560,7 +2560,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2572,7 +2572,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2586,7 +2586,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2598,7 +2598,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2610,7 +2610,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2622,7 +2622,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2634,7 +2634,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2648,7 +2648,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2660,7 +2660,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2672,7 +2672,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2684,7 +2684,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2696,7 +2696,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],
@@ -2710,7 +2710,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2722,7 +2722,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2734,7 +2734,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2746,7 +2746,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
           {
@@ -2758,7 +2758,7 @@ export default {
             title: this.title,
             author: this.author,
             date: this.date,
-            time: '9:00 a.m',
+            time: this.time,
             image: this.image
           },
         ],

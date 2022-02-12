@@ -9,13 +9,13 @@
             <input class="navbar__input" type="text" placeholder="Szukaj">
         </div>
         <div class="navbar__buttons">
-            <button>
+            
                 <router-link to="/schedule">
-                schedule </router-link> </button>
-            <button>
-                 <router-link to="/tickets">
-                 tickets </router-link> </button>
-            <button> <router-link to="/cart"> cart </router-link></button>
+                <button>schedule</button> </router-link> 
+            
+                 <router-link to="/tickets"><button>
+                 tickets </button> </router-link> 
+             <router-link to="/cart"><button> cart </button></router-link>
         </div>
     </div>
 </template>

@@ -31,7 +31,8 @@ export default createStore({
        shortDescription: "Swan Lake is the love story of Prince Siegfried, who on a hunting trip...",
        mediumDescription: "Swan Lake is the love story of Prince Siegfried, who on a hunting trip encounters a flock of swans, falls in love with the Swan Queen, Odette, and swears his allegiance and undying love to her. As a result of a curse by the evil sorcerer Baron von Rothbart, Odette can only take human form between midnight and daybreak...",
        group: 1,
-       image: require('../../public/img/swanlake.jpg')
+       image: require('../../public/img/swanlake.jpg'),
+       time: '8:00 p.m'
      },
      {
        title: "The Haunted Manor",
@@ -60,7 +61,8 @@ export default createStore({
        mediumDescription: "The story represents both an idyllic view of life in a Polish country manor house, and at the same time an idealistic preoccupation with the patriotic duties of the soldier, the military virtues of courage, bravery, and readiness to take up arms...",
        from: "https://en.wikipedia.org/wiki/The_Haunted_Manor",
        group: 2,
-       image: require('../../public/img/thehaunted.jpg')
+       image: require('../../public/img/thehaunted.jpg'),
+       time: '9:00 p.m'
      },
  
      {
@@ -90,7 +92,8 @@ export default createStore({
        shortDescription: "Cinderella, a young woman whose domineering stepmother forces her to act as a servant...",
        mediumDescription: "Cinderella, a young woman whose domineering stepmother forces her to act as a servant in her own home, helps her stepmother and two stepsisters to prepare for the Spring Ball, at which it is rumoured that the Prince will choose his bride-to-be...",
        group: 1,
-       image: require('../../public/img/cinderella.jpg')
+       image: require('../../public/img/cinderella.jpg'),
+       time: '7:30 p.m'
      },
      {
        title: "Peter Pan",
@@ -118,7 +121,8 @@ export default createStore({
        shortDescription: "The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their...",
        mediumDescription: "The novel begins with Mr. and Mrs. Darling's marriage, shortly followed by the birth of their children. The early scenes take place in the nursery where Mrs. Darling worries about her children's fascination with a mysterious boy named Peter Pan...",
        group: 2,
-       image: require('../../public/img/peterpan.jpg')
+       image: require('../../public/img/peterpan.jpg'),
+       time: '10:00 p.m'
      },
      {
        title: "Nutcracker",
@@ -145,7 +149,8 @@ export default createStore({
        shortDescription:"The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother...",
        mediumDescription: "The novel begins on Christmas Eve in the home of Marie Stahlbaum and her younger brother Fritz. Drosselmeyer, a friend of the family who is a clockmaker and inventor, arrives and gives the children a mechanical castle as a present...",
        group: 1,
-       image: require('../../public/img/nutcracker.jpg')
+       image: require('../../public/img/nutcracker.jpg'),
+       time: '5:00 p.m'
      },
      {
        title:"Magic To Do",
@@ -169,7 +174,8 @@ export default createStore({
        shortDescription: "A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants...",
        mediumDescription: "A musical revue created for Princess Cruises.  A Magic Maker and his fantastical assistants, along with four singers, showcase many of Schwartz’s best known songs, accompanied by spectacular magic illusions...",
        group: 2,
-       image: require('../../public/img/magic.jpg')
+       image: require('../../public/img/magic.jpg'),
+       time: '9:30 p.m'
      },
      {
        title:"Symphonic concert",
@@ -191,7 +197,8 @@ export default createStore({
        shortDescription: "Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies...",
        mediumDescription: "Symphonic music concerts and named after the philharmonic repertoire. The program includes symphonies, concert overtures, symphonic poems, and concertos for a solo instrument with an orchestra. Symphonic pieces can revel...",
        group: 1,
-       image: require('../../public/img/symphonic.jpg')
+       image: require('../../public/img/symphonic.jpg'),
+       time: '9:00 p.m'
      },
      {
        title:"Frank Sinatra acoustically",
@@ -214,7 +221,8 @@ export default createStore({
        shortDescription: "Frank Sinatra acoustically is a beautiful winter concert that warms the audience even in the coldest frost...",
        mediumDescription: "Frank Sinatra acoustically is a beautiful winter concert that warms the audience even in the coldest frost. Pleasant swing arrangements of American Christmas standards will take you straight to the 40's on the snow-covered streets of New York. During the concert you can hear popular winter songs such as Let it. snow, Jingle bells, Winter Wonderland...",
        group: 2,
-       image: require('../../public/img/sinatra.jpg')
+       image: require('../../public/img/sinatra.jpg'),
+       time: '8:00 p.m'
      },
      {
        title:"Traviata",
@@ -239,7 +247,8 @@ export default createStore({
        shortDescription: "Violetta Valéry, a famed courtesan, throws a lavish party at her Paris salon to celebrate her...",
        mediumDescription: "Violetta Valéry, a famed courtesan, throws a lavish party at her Paris salon to celebrate her recovery from an illness. Gastone, a viscount, has brought with him a friend, Alfredo Germont, a young bourgeois from a provincial family who has long adored Violetta from afar. While walking to the salon, Gastone tells Violetta that Alfredo loves her...",
        group: 1,
-       image: require('../../public/img/traviata.jpg')
+       image: require('../../public/img/traviata.jpg'),
+       time: '10:30 p.m'
      },
      {
        title:"The Girl On The Train",
@@ -264,7 +273,8 @@ export default createStore({
        shortDescription: "The international phenomenon novel by Paula Hawkins has been adapted into a thrilling, first-class play that...",
        mediumDescription: "The international phenomenon novel by Paula Hawkins has been adapted into a thrilling, first-class play that you won’t want to miss. Over 20 million copies of this bestselling novel have been sold worldwide and the stage adaptation is expected to enjoy similar success. Who’s The Girl on the Train?...",
        group: 2,
-       image: require('../../public/img/train.jpg')
+       image: require('../../public/img/train.jpg'),
+       time: '9:00 p.m'
      },
     ],
     cart: [],

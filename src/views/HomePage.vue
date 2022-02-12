@@ -36,14 +36,14 @@
           <h3 class="schedule__info-title">
             {{ $store.state.shows[0].title }}
           </h3>
-          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-time">{{ $store.state.shows[0].time }}</p>
           <p class="schedule__info-author">
             {{ $store.state.shows[0].author }}
           </p>
           <p class="schedule__info-description">
             {{ $store.state.shows[0].shortDescription }}
           </p>
-          <button class="schedule__btn">
+          
             <router-link
               :to="{
                 name: 'details',
@@ -60,11 +60,11 @@
                   image: $store.state.shows[0].image,
                 },
               }"
-              >Więcej</router-link
+              ><button class="schedule__btn">Więcej</button></router-link
             >
-          </button>
+          
 
-          <button class="schedule__btn">
+          
             <router-link
               :to="{
                 name: 'reservation',
@@ -76,9 +76,9 @@
                   image: $store.state.shows[0].image,
                 },
               }"
-              >Buy ticket
+              ><button class="schedule__btn">Buy ticket</button>
             </router-link>
-          </button>
+          
         </div>
       </div>
       <div class="schedule__box">
@@ -108,14 +108,14 @@
           <h3 class="schedule__info-title">
             {{ $store.state.shows[2].title }}
           </h3>
-          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-time">{{ $store.state.shows[2].time }}</p>
           <p class="schedule__info-author">
             {{ $store.state.shows[2].author }}
           </p>
           <p class="schedule__info-description">
             {{ $store.state.shows[2].shortDescription }}
           </p>
-          <button class="schedule__btn">
+          
             <router-link
               :to="{
                 name: 'details',
@@ -131,10 +131,10 @@
                   image: $store.state.shows[2].image
                 },
               }"
-              >Więcej</router-link
+              ><button class="schedule__btn">Więcej</button></router-link
             >
-          </button>
-          <button class="schedule__btn">
+          
+          
             <router-link
               :to="{
                 name: 'reservation',
@@ -146,9 +146,9 @@
                   image: $store.state.shows[2].image,
                 },
               }"
-              >Kup bilet
+              ><button class="schedule__btn">Kup bilet</button>
             </router-link>
-          </button>
+          
         </div>
       </div>
 
@@ -176,14 +176,14 @@ author: $store.state.shows[4].author,
           <h3 class="schedule__info-title">
             {{ $store.state.shows[4].title }}
           </h3>
-          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-time">{{ $store.state.shows[4].time }}</p>
           <p class="schedule__info-author">
             {{ $store.state.shows[4].author }}
           </p>
           <p class="schedule__info-description">
             {{ $store.state.shows[4].shortDescription }}
           </p>
-          <button class="schedule__btn">
+          
             <router-link
               :to="{
                 name: 'details',
@@ -196,10 +196,10 @@ author: $store.state.shows[4].author,
                   image: $store.state.shows[4].image,
                 },
               }"
-              >Więcej</router-link
+              ><button class="schedule__btn">Więcej</button></router-link
             >
-          </button>
-          <button class="schedule__btn">
+          
+          
             <router-link
               :to="{
                 name: 'reservation',
@@ -211,9 +211,9 @@ author: $store.state.shows[4].author,
                   image: $store.state.shows[4].image,
                 },
               }"
-              >Kup bilet
+              ><button class="schedule__btn">Kup bilet</button>
             </router-link>
-          </button>
+          
         </div>
       </div>
 
@@ -241,12 +241,12 @@ author: $store.state.shows[4].author,
           <h3 class="schedule__info-title">
             {{ $store.state.shows[6].title }}
           </h3>
-          <p class="schedule__info-time">9:00</p>
+          <p class="schedule__info-time">{{ $store.state.shows[6].time }}</p>
           <p class="schedule__info-author"></p>
           <p class="schedule__info-description">
             {{ $store.state.shows[6].shortDescription }}
           </p>
-          <button class="schedule__btn">
+          
             <router-link
               :to="{
                 name: 'details',
@@ -259,10 +259,10 @@ author: $store.state.shows[4].author,
                   image: $store.state.shows[6].image,
                 },
               }"
-              >Więcej</router-link
+              ><button class="schedule__btn">Więcej</button></router-link
             >
-          </button>
-          <button class="schedule__btn">
+          
+          
             <router-link
               :to="{
                 name: 'reservation',
@@ -274,9 +274,9 @@ author: $store.state.shows[4].author,
                   image: $store.state.shows[6].image,
                 },
               }"
-              >Kup bilet
+              ><button class="schedule__btn">Kup bilet</button>
             </router-link>
-          </button>
+          
         </div>
       </div>
     </div>
@@ -320,19 +320,43 @@ author: $store.state.shows[4].author,
     <h2 class="title">News</h2>
     <div class="news__container">
       <div class="news__box">
-         <router-link to="/news">
+        <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'Pinocchio on DVD coming soon',
+              image: '../../src/assets/pinocchio.jpg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/pinocchio.jpg" alt="" />
         <h3 class="news__title">Pinocchio on DVD coming soon</h3>
                  </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'Valentines day in the Musical Theater',
+              image: '../../src/assets/valentine.jpeg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/valentine.jpeg" alt="" />
         <h3 class="news__title">Valentines day in the Musical Theater</h3>
         </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'Don Giovanni W.A Mozart for Grandmas and Grandpas Day',
+              image: '../../src/assets/woman.jpg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/woman.jpg" alt="" />
         <h3 class="news__title">
           Don Giovanni W.A Mozart for Grandma's and Grandpa's Day
@@ -340,13 +364,29 @@ author: $store.state.shows[4].author,
         </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'COVID information',
+              image: '../../src/assets/curtain.jpg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/curtain.jpg" alt="" />
         <h3 class="news__title">COVID information</h3>
         </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'Rehearsals for the premiere The Haunted Manor S. Moniuszko',
+              image: '../../src/assets/rehearsals.jpg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/rehearsals.jpg" alt="" />
         <h3 class="news__title">
           Rehearsals for the premiere The Haunted Manor S. Moniuszko
@@ -354,13 +394,29 @@ author: $store.state.shows[4].author,
         </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'Don Quixote Ludwig Minkus coming soon',
+              image: '../../src/assets/donquixote.jpg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/donquixote.jpg" alt="" />
         <h3 class="news__title">Don Quixote Ludwig Minkus coming soon</h3>
         </router-link>
       </div>
       <div class="news__box">
-        <router-link to="/news">
+                <router-link
+          :to="{
+            name: 'news',
+            params: {
+              title: 'New Years Eve to the disco rhythm',
+              image: '../../src/assets/newyear.jpeg',
+            },
+          }"
+        >
         <img class="news__img" src="../../src/assets/newyear.jpeg" alt="" />
         <h3 class="news__title">New Year's Eve to the disco rhythm</h3>
         </router-link>

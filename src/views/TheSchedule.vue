@@ -64,7 +64,7 @@
             >
               <h3 class="schedule__title">{{ show.title }}</h3>
             </router-link>
-            <h3 class="schedule__time">9:00 a.m</h3>
+            <h3 class="schedule__time">{{show.time}}</h3>
           </div>
           <p class="schedule__author">{{ show.author }}</p>
           <p class="schedule__description">{{ show.mediumDescription }}</p>
@@ -89,7 +89,7 @@
             <button class="schedule__btn">details</button>
           </router-link>
 
-          <button class="schedule__btn">
+          
             <router-link :to="{
                 name: 'reservation',
                 params: {
@@ -100,8 +100,8 @@
                   image: show.image
                   
                 },
-              }">Buy ticket </router-link>
-          </button>
+              }"> <button class="schedule__btn"> Buy ticket </button> </router-link>
+          
         </div>
       </div>
     </div>

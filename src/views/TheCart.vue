@@ -15,7 +15,7 @@
       </div>
       <div class="ticket__info">
         <h3 class="ticket__date">{{item.date}}/01/2022</h3>
-        <p class="ticket__time">9:00 a.m</p>
+        <p class="ticket__time">{{item.time}}</p>
       </div>
       <img class="ticket__edit" src="../../src/assets/edit.svg" alt="">
     </div>
@@ -35,7 +35,7 @@
       </div>
       <div class="summary__total wrapper">
         <h3 class="summary__price">Total price {{totalPrice}} $</h3>
-        <button class="summary__submit" @click="submitCart"><router-link to="/confirmation"
+        <button v-if="$store.state.cart.length !== 0" class="summary__submit" @click="submitCart"><router-link to="/confirmation"
         >submit
       </router-link></button>
       </div>

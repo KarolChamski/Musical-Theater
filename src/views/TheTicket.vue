@@ -37,7 +37,7 @@
     <img class="ticket__qrCode" src="../../src/assets/qrcode.svg" alt="" />
   </div>
 
-  <button class="button">Print</button>
+  <button @click="print" class="button">Print</button>
   <button class="button">Download</button>
 </template>
 
@@ -168,4 +168,6 @@ hr {
     font-size: 16px;
   }
 }
+
+
 </style>

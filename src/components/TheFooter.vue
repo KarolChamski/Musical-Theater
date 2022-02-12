@@ -17,7 +17,7 @@
         </div>
         <div class="links">
             <ul class="list">
-                <li><a href="">  Customer service </a></li>
+                <li><a href="">Customer service </a></li>
                 <li><a href="">Privacy policy</a></li>
                 <li><a href="">Regulations</a></li>
                 <li><a href="">Contact</a></li>
@@ -41,13 +41,14 @@
 
 footer{
 
-
     .container{
         background-color: #F6F6F6;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 4rem 3rem;
+        height: 20vh;
+
     }
     .newsletter{
         text-align: left;

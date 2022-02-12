@@ -9,20 +9,20 @@
       <div class="product__info">
         <div class="product__info-maintitle">
           <h3 class="product__info-title">{{ title }}</h3>
-          <h3 class="product__info-data">{{currDate}}/01/2022</h3>
+          <h3 v-if="currDate !== ''" class="product__info-data">{{currDate}}/01/2022</h3>
         </div>
         <h3 class="product__info-time">{{currTime}}</h3>
         <p class="product__info-text">{{ description1 }}</p>
-        <button @click="test" class="product__info-btn"> <router-link :to="{
+         <router-link :to="{
                 name: 'reservation',
                 params: {
                   title: this.title,
                   author: this.author,
                   date: this.currDate,
-                  time: this.time,
+                  time: this.currTime,
                   image: this.image
                 },
-              }">Buy ticket </router-link></button>
+              }"><button @click="test" class="product__info-btn">Buy ticket</button> </router-link>
       </div>
     </div>
     <div class="product__date">
@@ -85,7 +85,9 @@ export default {
       console.log(this.currDate);
     }
   },
-
+mounted () {
+  window.scrollTo(0, 0)
+},
   data() {
     return {
       availableDates: [
@@ -168,6 +170,7 @@ export default {
       color: white;
       padding: 0.8rem 2rem;
       font-size: 14px;
+      cursor: pointer;
     }
   }
   &__text {

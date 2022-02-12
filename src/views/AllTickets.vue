@@ -18,7 +18,7 @@
         <p class="ticket__time">{{item.time}}</p>
       </div>
       <div class="ticket__buttons">
-        <button class="ticket__btn">
+        
                       <router-link :to="{
                 name: 'ticket',
                 params: {
@@ -29,14 +29,16 @@
                   row: item.row,
                   num: item.num
                 },
-              }">Show</router-link>
-        </button>
+              }"> <button class="ticket__btn"> Show </button></router-link>
+        
         <button class="ticket__btn">Download</button>
       </div>
     </div>
   </div>
 </template>
+<script>
 
+</script>
 <style lang="scss" scoped>
 
 .title{
@@ -46,6 +48,7 @@ font-size: 30px;
 .ticket {
   margin-top: 8rem;
   margin-bottom: 5rem;
+  min-height: 50vh;
   &__img {
     width: 200px;
   }
