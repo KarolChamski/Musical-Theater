@@ -1,6 +1,7 @@
 <template>
   <div class="back">
-    <button class="back__btn">Wstecz</button>
+    
+    <button @click="goBack" class="back__btn">Back</button>
   </div>
   <div class="product wrapper">
     <div class="product__box">
@@ -22,7 +23,7 @@
                   time: this.currTime,
                   image: this.image
                 },
-              }"><button @click="test" class="product__info-btn">Buy ticket</button> </router-link>
+              }"><button @click="test" v-if="currDate !== ''" class="product__info-btn">Buy ticket</button> </router-link>
       </div>
     </div>
     <div class="product__date">
@@ -83,6 +84,9 @@ export default {
     },
     test(){
       console.log(this.currDate);
+    },
+    goBack(){
+      this.$router.go(-1)
     }
   },
 mounted () {

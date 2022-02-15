@@ -2786,6 +2786,9 @@ export default {
       // this.$store.commit('updateCart', this.cart);
       console.log(this.$store.state.cart);
     },
+        goBack(){
+      this.$router.go(-1)
+    }
   },
   computed:{
         totalPrice(){
