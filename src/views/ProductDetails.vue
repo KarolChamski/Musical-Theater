@@ -1,7 +1,8 @@
 <template>
   <div class="back">
-    
-    <button @click="goBack" class="back__btn">Back</button>
+    <router-link to="/home">
+    <button class="back__btn">Back</button>
+    </router-link>
   </div>
   <div class="product wrapper">
     <div class="product__box">
@@ -84,9 +85,6 @@ export default {
     },
     test(){
       console.log(this.currDate);
-    },
-    goBack(){
-      this.$router.go(-1)
     }
   },
 mounted () {

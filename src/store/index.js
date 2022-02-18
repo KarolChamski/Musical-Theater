@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 export default createStore({
+  search: '',
   state: {
     shows:[
       {
@@ -289,5 +290,8 @@ export default createStore({
      state.cart = [];
 
     },
+    updateSearch (state, message) {
+      state.search = message.toLowerCase()
+    }
   }
 });

@@ -3,9 +3,11 @@
     <h3 class="confirmation__title">Thank you for the order!</h3>
     <p class="confirmation__text">Your tickets are stored in the 'tickets' tab.</p>
     <p class="confirmation__text">There you can print your ticket or show it for validation.</p>
-     <button class="confirmation__btn"><router-link to="/tickets"
-        >Tickets
-      </router-link></button>
+     
+         <router-link  to="/tickets"
+        ><button class="confirmation__btn">Tickets</button>
+      </router-link>
+      
 </div>
 </template>
 

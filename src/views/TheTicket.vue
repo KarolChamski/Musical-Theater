@@ -37,7 +37,6 @@
     <img class="ticket__qrCode" src="../../src/assets/qrcode.svg" alt="" />
   </div>
 
-  <button @click="print" class="button">Print</button>
   <button class="button">Download</button>
 </template>
 

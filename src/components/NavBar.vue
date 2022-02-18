@@ -6,7 +6,8 @@
             </router-link>
             </div>
         <div class="navbar__search">
-            <input class="navbar__input" type="text" placeholder="Szukaj">
+            <input class="navbar__input" v-model="searchInput" @click="clickSearch" @input="searchMessage(searchInput)" type="text" placeholder="Szukaj">
+            
         </div>
         <div class="navbar__buttons">
             
@@ -19,6 +20,26 @@
         </div>
     </div>
 </template>
+<script>
+export default{
+    data(){
+        return{
+            searchInput: ''
+        }
+    },
+    methods: {
+      searchMessage (message) {
+        this.$router.push({ name: 'search'})
+        this.$store.commit('updateSearch', message);
+      },
+      clickSearch(){
+          this.$router.push({ name: 'search'})
+      }
+    }
+
+}
+
+</script>
 
 <style lang="scss" scoped>
 
@@ -59,4 +80,4 @@ button{
     font-weight: bold;
     letter-spacing: 1px;
 }
-</style>
+</style>,

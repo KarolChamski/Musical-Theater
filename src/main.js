@@ -11,6 +11,7 @@ import Reservation from './views/ReservationPage.vue'
 import News from './views/NewsPage.vue'
 import store from './store'
 import Confirmation from './views/Confirmation.vue'
+import Search from './views/SearchResults.vue'
 
 
 
@@ -25,6 +26,7 @@ const router = createRouter({
       { path: '/ticket', name: 'ticket', component: Ticket, props: true },
       { path: '/reservation', name: 'reservation', component: Reservation, props: true },
       { path: '/news', name: 'news', component: News, props: true },
+      { path: '/search', name: 'search', component: Search, props: true },
       { path: '/confirmation', name: 'confirmation', component: Confirmation, props: true },
     ],
     linkActiveClass: "active",

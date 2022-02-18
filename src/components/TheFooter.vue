@@ -17,17 +17,18 @@
         </div>
         <div class="links">
             <ul class="list">
-                <li><a href="">Customer service </a></li>
-                <li><a href="">Privacy policy</a></li>
-                <li><a href="">Regulations</a></li>
-                <li><a href="">Contact</a></li>
+                <li><router-link to ="/home">Customer service</router-link></li>
+                <li><router-link to ="/home">Privacy policy</router-link></li>
+                <li><router-link to ="/home">Regulations</router-link></li>
+                <li><router-link to ="/home">Contact</router-link></li>
             </ul>
         </div>
         <div class="links">
            <ul class="links">
-                <li><a href="">Gift cards</a></li>
-                <li><a href="">Returns and complains</a></li>
-                <li><a href="">Newsletter</a></li>
+            <li><router-link to ="/home">Gift cards</router-link></li>
+            <li><router-link to ="/home">Returns and complains</router-link></li>
+            <li><router-link to ="/home">Newsletter</router-link></li>
+
                 <li><img class="links__icon" src="../../src/assets/facebook.svg" alt=""> <img class="links__icon" src="../../src/assets/instagram.svg" alt=""> <img class="links__icon" src="../../src/assets/youtube.svg" alt=""></li>
             </ul>
            
